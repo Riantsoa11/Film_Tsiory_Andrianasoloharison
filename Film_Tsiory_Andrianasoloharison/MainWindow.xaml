@@ -1,0 +1,63 @@
+﻿<Window x:Class="Film_Tsiory_Andrianasoloharison.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Film_Tsiory_Andrianasoloharison"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="D:\Tsiory\Projet\Film_Tsiory_Andrianasoloharison\Film_Tsiory_Andrianasoloharison\Ressources\Images\fond.jpg" Stretch="UniformToFill" />
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="7*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Name="Gauche"></Grid>
+
+        <Grid Grid.Column="1" Name="Centre">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="8*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" ></Grid>
+            <Grid Grid.Row="1" Name="Sign_in" Background="#212529" Opacity="0.9">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <Label Content="Sign In" HorizontalAlignment="Center"  VerticalAlignment="Center" Foreground="White" FontSize="25"/>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <TextBox Height="38" Text="Email or phone number" VerticalAlignment="Center" Width="227" Background="#6c757d"  Foreground="#adb5bd"/>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <TextBox Height="38" Text="Password" VerticalAlignment="Center" Width="227" Background="#6c757d" Foreground="#adb5bd" />
+                </Grid>
+                <Grid Grid.Row="3">
+                    <Button Content="Sign In" Foreground="White" Height="38" VerticalAlignment="Center" Width="227" Background="#d00000" Click="Button_Click"/>
+                </Grid>
+                <Grid Grid.Row="4">
+                    <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="18" Margin="105,17,0,0" Grid.Row="4" VerticalAlignment="Top" Width="21" RenderTransformOrigin="1.485,0.708"/>
+                    <Label Content="Remember me" HorizontalAlignment="Left" Height="24" Margin="126,11,0,0" VerticalAlignment="Top" Width="158" Foreground="White"/>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="2"></Grid>
+        </Grid>
+
+        <Grid Grid.Column="2" Name="Droite"></Grid>
+    </Grid>
+</Window>
