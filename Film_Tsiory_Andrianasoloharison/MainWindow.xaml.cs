@@ -12,8 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+//API
 using System.Net.Http;
-//using Newtonsoft.Json;
+using Newtonsoft.Json;
 using System.IO;
 using System.Diagnostics;
 
@@ -94,8 +95,34 @@ namespace Film_Tsiory_Andrianasoloharison
         public MainWindow()
         {
             InitializeComponent();
+            Windows_Container.Children.Clear();
+            View.Home home = new View.Home();
+            Windows_Container.Children.Add(home);
+        }
+        
+        private void BTN_Home_Click(object sender, RoutedEventArgs e)
+        {
+            Windows_Container.Children.Clear();
+            View.Home home = new View.Home();
+            Windows_Container.Children.Add(home);
+        }
+
+        private void BTN_Liste_Click(object sender, RoutedEventArgs e)
+        {
+            Windows_Container.Children.Clear();
+            View.Liste liste = new View.Liste();
+            Windows_Container.Children.Add(liste);
+        }
+
+        private void BTN_Favori_Click(object sender, RoutedEventArgs e)
+        {
+            Windows_Container.Children.Clear();
+            View.Favori favori = new View.Favori();
+            Windows_Container.Children.Add(favori); 
         }
 
         
     }
+
+    
 }

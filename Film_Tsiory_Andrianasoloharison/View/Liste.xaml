@@ -1,0 +1,222 @@
+﻿<UserControl x:Class="Film_Tsiory_Andrianasoloharison.View.Liste"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Film_Tsiory_Andrianasoloharison.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <!--Row 0-->
+        <Grid Grid.Row="0">
+
+            <!--Les colonnes-->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <!--Colonne 0-->
+            <Grid Grid.Column="0">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <!--Colonne 0 Row 0-->
+                <Grid Grid.Row="0">
+                    <Button Name="img1" Click="BTN_img1_Click" >
+                        <StackPanel>
+                            <Image  Source="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" Stretch="UniformToFill" />
+                        </StackPanel>
+                    </Button>
+                </Grid>
+
+                <!--Colonne 0 Row 1-->
+                <Grid Grid.Row="1">
+                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2">Action de grâces</TextBlock>
+                </Grid>
+
+            </Grid>
+
+            <!--Colonne 1-->
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <!--Colonne 1 Row 0-->
+                <Grid Grid.Row="0">
+                    <Button Name="img2" Click="BTN_img2_Click" >
+                        <StackPanel>
+                            <Image  Source="https://image.tmdb.org/t/p/w500/ui4DrH1cKk2vkHshcUcGt2lKxCm.jpg" Stretch="UniformToFill" />
+                        </StackPanel>
+                    </Button>
+                </Grid>
+
+                <!--Colonne 1 Row 1-->
+                <Grid Grid.Row="1">
+                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2">Action de grâces</TextBlock>
+                </Grid>
+
+            </Grid>
+
+            <!--Colonne 2-->
+            <Grid Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <!--Colonne 2 Row 0-->
+                <Grid Grid.Row="0">
+                    <Button Name="img3" Click="BTN_img3_Click" >
+                        <StackPanel>
+                            <Image  Source="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" Stretch="UniformToFill" />
+                        </StackPanel>
+                    </Button>
+                </Grid>
+
+                <!--Colonne 2 Row 1-->
+                <Grid Grid.Row="1">
+                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2">Action de grâces</TextBlock>
+                </Grid>
+
+            </Grid>
+
+            <!--Colonne 3-->
+            <Grid Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <!--Colonne 3 Row 0-->
+                <Grid Grid.Row="0">
+                    <Button Name="img4" Click="BTN_img4_Click" >
+                        <StackPanel>
+                            <Image  Source="https://image.tmdb.org/t/p/w500/ui4DrH1cKk2vkHshcUcGt2lKxCm.jpg" Stretch="UniformToFill" />
+                        </StackPanel>
+                    </Button>
+                </Grid>
+
+                <!--Colonne 3 Row 1-->
+                <Grid Grid.Row="1">
+                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2">Action de grâces</TextBlock>
+                </Grid>
+            </Grid>
+
+        </Grid>
+
+        <!--Row 1-->
+        <Grid Grid.Row="1">
+
+            <!--Les colonnes-->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <!--Colonne 0-->
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <!--Colonne 0 Row 0-->
+                <Grid Grid.Row="0">
+                    <Button Name="img5" Click="BTN_img5_Click" >
+                        <StackPanel>
+                            <Image  Source="https://image.tmdb.org/t/p/w500/ui4DrH1cKk2vkHshcUcGt2lKxCm.jpg" Stretch="UniformToFill" />
+                        </StackPanel>
+                    </Button>
+                </Grid>
+
+                <!--Colonne 0 Row 1-->
+                <Grid Grid.Row="1">
+                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2">Action de grâces</TextBlock>
+                </Grid>
+            </Grid>
+
+            <!--Colonne 1-->
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <!--Colonne 1 Row 0-->
+                <Grid Grid.Row="0">
+                    <Button Name="img6" Click="BTN_img6_Click" >
+                        <StackPanel>
+                            <Image  Source="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" Stretch="UniformToFill" />
+                        </StackPanel>
+                    </Button>
+                </Grid>
+
+                <!--Colonne 1 Row 1-->
+                <Grid Grid.Row="1">
+                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2">Action de grâces</TextBlock>
+                </Grid>
+            </Grid>
+
+            <!--Colonne 2-->
+            <Grid Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <!--Colonne 2 Row 0-->
+                <Grid Grid.Row="0">
+                    <Button Name="img7" Click="BTN_img7_Click" >
+                        <StackPanel>
+                            <Image  Source="https://image.tmdb.org/t/p/w500/ui4DrH1cKk2vkHshcUcGt2lKxCm.jpg" Stretch="UniformToFill" />
+                        </StackPanel>
+                    </Button>
+                </Grid>
+
+                <!--Colonne 2 Row 1-->
+                <Grid Grid.Row="1">
+                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2">Action de grâces</TextBlock>
+                </Grid>
+            </Grid>
+
+            <!--Colonne 3-->
+            <Grid Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <!--Colonne 3 Row 0-->
+                <Grid Grid.Row="0">
+                    <Button Name="img8" Click="BTN_img8_Click" >
+                        <StackPanel>
+                            <Image  Source="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" Stretch="UniformToFill" />
+                        </StackPanel>
+                    </Button>
+                </Grid>
+
+                <!--Colonne 3 Row 1-->
+                <Grid Grid.Row="1">
+                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2">Action de grâces</TextBlock>
+                </Grid>
+            </Grid>
+
+        </Grid>
+
+    </Grid>
+</UserControl>
