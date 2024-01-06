@@ -67,6 +67,9 @@
     <Compile Include="View\Liste.xaml.cs">
       <DependentUpon>Liste.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Page.xaml.cs">
+      <DependentUpon>Page.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -88,6 +91,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Liste.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Page.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
