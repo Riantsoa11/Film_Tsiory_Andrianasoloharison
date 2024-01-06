@@ -27,7 +27,12 @@ namespace Film_Tsiory_Andrianasoloharison.View
 
         private void BTN_img1_Click(object sender, RoutedEventArgs e)
         {
+            Windows_Container.RowDefinitions.Clear();
 
+
+            Windows_Container.Children.Clear();
+            Page page = new Page();
+            Windows_Container.Children.Add(page);
         }
 
         private void BTN_img2_Click(object sender, RoutedEventArgs e)
@@ -52,7 +57,9 @@ namespace Film_Tsiory_Andrianasoloharison.View
 
         private void BTN_img6_Click(object sender, RoutedEventArgs e)
         {
-
+            Windows_Container.Children.Clear();
+            View.Page page = new View.Page();
+            Windows_Container.Children.Add(page);
         }
 
         private void BTN_img7_Click(object sender, RoutedEventArgs e)

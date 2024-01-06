@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:Film_Tsiory_Andrianasoloharison.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="Green">
-            
+    <Grid Background="Green" Name="Windows_Container">
+        
     </Grid>
 </UserControl>

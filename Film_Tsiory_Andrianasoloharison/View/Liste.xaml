@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:Film_Tsiory_Andrianasoloharison.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="White">
+    <Grid Background="White" Name="Windows_Container">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
@@ -33,12 +33,15 @@
 
                 <!--Colonne 0 Row 0-->
                 <Grid Grid.Row="0">
-                    <Button Name="img1" Click="BTN_img1_Click" >
-                        <StackPanel>
-                            <Image  Source="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" Stretch="UniformToFill" />
-                        </StackPanel>
+                    
+                    <Button Name="Img1" Click="BTN_img1_Click">
+                        <Button.Background>
+                            <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" />
+                        </Button.Background>
                     </Button>
+
                 </Grid>
+
 
                 <!--Colonne 0 Row 1-->
                 <Grid Grid.Row="1">
@@ -56,11 +59,13 @@
 
                 <!--Colonne 1 Row 0-->
                 <Grid Grid.Row="0">
-                    <Button Name="img2" Click="BTN_img2_Click" >
-                        <StackPanel>
-                            <Image  Source="https://image.tmdb.org/t/p/w500/ui4DrH1cKk2vkHshcUcGt2lKxCm.jpg" Stretch="UniformToFill" />
-                        </StackPanel>
+
+                    <Button Name="Img2" Click="BTN_img2_Click">
+                        <Button.Background>
+                            <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/ui4DrH1cKk2vkHshcUcGt2lKxCm.jpg" />
+                        </Button.Background>
                     </Button>
+                    
                 </Grid>
 
                 <!--Colonne 1 Row 1-->
@@ -79,11 +84,13 @@
 
                 <!--Colonne 2 Row 0-->
                 <Grid Grid.Row="0">
-                    <Button Name="img3" Click="BTN_img3_Click" >
-                        <StackPanel>
-                            <Image  Source="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" Stretch="UniformToFill" />
-                        </StackPanel>
+                    
+                    <Button Name="Img3" Click="BTN_img3_Click">
+                        <Button.Background>
+                            <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" />
+                        </Button.Background>
                     </Button>
+
                 </Grid>
 
                 <!--Colonne 2 Row 1-->
@@ -102,11 +109,13 @@
 
                 <!--Colonne 3 Row 0-->
                 <Grid Grid.Row="0">
-                    <Button Name="img4" Click="BTN_img4_Click" >
-                        <StackPanel>
-                            <Image  Source="https://image.tmdb.org/t/p/w500/ui4DrH1cKk2vkHshcUcGt2lKxCm.jpg" Stretch="UniformToFill" />
-                        </StackPanel>
+                    
+                    <Button Name="Img4" Click="BTN_img4_Click">
+                        <Button.Background>
+                            <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/ui4DrH1cKk2vkHshcUcGt2lKxCm.jpg" />
+                        </Button.Background>
                     </Button>
+
                 </Grid>
 
                 <!--Colonne 3 Row 1-->
@@ -137,11 +146,13 @@
 
                 <!--Colonne 0 Row 0-->
                 <Grid Grid.Row="0">
-                    <Button Name="img5" Click="BTN_img5_Click" >
-                        <StackPanel>
-                            <Image  Source="https://image.tmdb.org/t/p/w500/ui4DrH1cKk2vkHshcUcGt2lKxCm.jpg" Stretch="UniformToFill" />
-                        </StackPanel>
+                    
+                    <Button Name="Img5" Click="BTN_img5_Click">
+                        <Button.Background>
+                            <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/ui4DrH1cKk2vkHshcUcGt2lKxCm.jpg" />
+                        </Button.Background>
                     </Button>
+                    
                 </Grid>
 
                 <!--Colonne 0 Row 1-->
@@ -159,11 +170,13 @@
 
                 <!--Colonne 1 Row 0-->
                 <Grid Grid.Row="0">
-                    <Button Name="img6" Click="BTN_img6_Click" >
-                        <StackPanel>
-                            <Image  Source="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" Stretch="UniformToFill" />
-                        </StackPanel>
+                    
+                    <Button Name="Img6" Click="BTN_img6_Click">
+                        <Button.Background>
+                            <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" />
+                        </Button.Background>
                     </Button>
+
                 </Grid>
 
                 <!--Colonne 1 Row 1-->
@@ -181,11 +194,13 @@
 
                 <!--Colonne 2 Row 0-->
                 <Grid Grid.Row="0">
-                    <Button Name="img7" Click="BTN_img7_Click" >
-                        <StackPanel>
-                            <Image  Source="https://image.tmdb.org/t/p/w500/ui4DrH1cKk2vkHshcUcGt2lKxCm.jpg" Stretch="UniformToFill" />
-                        </StackPanel>
+                    
+                    <Button Name="Img7" Click="BTN_img7_Click">
+                        <Button.Background>
+                            <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/ui4DrH1cKk2vkHshcUcGt2lKxCm.jpg" />
+                        </Button.Background>
                     </Button>
+                    
                 </Grid>
 
                 <!--Colonne 2 Row 1-->
@@ -203,11 +218,13 @@
 
                 <!--Colonne 3 Row 0-->
                 <Grid Grid.Row="0">
-                    <Button Name="img8" Click="BTN_img8_Click" >
-                        <StackPanel>
-                            <Image  Source="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" Stretch="UniformToFill" />
-                        </StackPanel>
+     
+                    <Button Name="Img8" Click="BTN_img8_Click">
+                        <Button.Background>
+                            <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" />
+                        </Button.Background>
                     </Button>
+
                 </Grid>
 
                 <!--Colonne 3 Row 1-->
