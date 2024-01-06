@@ -1,6 +1,10 @@
-﻿using System;
+﻿using Film_Tsiory_Andrianasoloharison.Services;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -24,5 +28,9 @@ namespace Film_Tsiory_Andrianasoloharison.View
         {
             InitializeComponent();
         }
+
+        
     }
+
+
 }

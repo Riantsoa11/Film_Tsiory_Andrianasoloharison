@@ -45,7 +45,7 @@
 
                 <!--Colonne 0 Row 1-->
                 <Grid Grid.Row="1">
-                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2">Action de grâces</TextBlock>
+                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Titre1">Action de grâces</TextBlock>
                 </Grid>
 
             </Grid>
@@ -70,7 +70,7 @@
 
                 <!--Colonne 1 Row 1-->
                 <Grid Grid.Row="1">
-                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2">Action de grâces</TextBlock>
+                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Titre2">Action de grâces</TextBlock>
                 </Grid>
 
             </Grid>
@@ -95,7 +95,7 @@
 
                 <!--Colonne 2 Row 1-->
                 <Grid Grid.Row="1">
-                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2">Action de grâces</TextBlock>
+                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Titre3">Action de grâces</TextBlock>
                 </Grid>
 
             </Grid>
@@ -120,7 +120,7 @@
 
                 <!--Colonne 3 Row 1-->
                 <Grid Grid.Row="1">
-                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2">Action de grâces</TextBlock>
+                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Titre4">Action de grâces</TextBlock>
                 </Grid>
             </Grid>
 
@@ -157,7 +157,7 @@
 
                 <!--Colonne 0 Row 1-->
                 <Grid Grid.Row="1">
-                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2">Action de grâces</TextBlock>
+                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Titre5">Action de grâces</TextBlock>
                 </Grid>
             </Grid>
 
@@ -181,7 +181,7 @@
 
                 <!--Colonne 1 Row 1-->
                 <Grid Grid.Row="1">
-                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2">Action de grâces</TextBlock>
+                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Titre6">Action de grâces</TextBlock>
                 </Grid>
             </Grid>
 
@@ -205,7 +205,7 @@
 
                 <!--Colonne 2 Row 1-->
                 <Grid Grid.Row="1">
-                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2">Action de grâces</TextBlock>
+                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Titre7">Action de grâces</TextBlock>
                 </Grid>
             </Grid>
 
@@ -229,7 +229,7 @@
 
                 <!--Colonne 3 Row 1-->
                 <Grid Grid.Row="1">
-                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2">Action de grâces</TextBlock>
+                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Titre8">Action de grâces</TextBlock>
                 </Grid>
             </Grid>
 

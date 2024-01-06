@@ -82,7 +82,14 @@ namespace Film_Tsiory_Andrianasoloharison
         public double vote_average { get; set; }
         public int vote_count { get; set; }
     }
- 
+
+    public class FilmsContainer
+    {
+        [JsonProperty("results")]
+        public List<Root> Films { get; set; }
+    }
+
+
     public class SpokenLanguage
     {
         public string english_name { get; set; }

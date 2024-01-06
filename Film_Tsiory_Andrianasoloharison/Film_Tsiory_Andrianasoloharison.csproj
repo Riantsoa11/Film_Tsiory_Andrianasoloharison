@@ -58,6 +58,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Services\Film.cs" />
     <Compile Include="View\Favori.xaml.cs">
       <DependentUpon>Favori.xaml</DependentUpon>
     </Compile>
