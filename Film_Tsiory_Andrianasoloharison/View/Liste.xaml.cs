@@ -31,14 +31,22 @@ namespace Film_Tsiory_Andrianasoloharison.View
 
         }
 
-        private void BTN_img1_Click(object sender, RoutedEventArgs e)
+        private async void BTN_img1_Click(object sender, RoutedEventArgs e)
         {
             Windows_Container.RowDefinitions.Clear();
-
-
             Windows_Container.Children.Clear();
+
+            Button button = sender as Button;
+            string textBlockName = "Id" + button.Name.Substring(3);
+
+            // Trouver le TextBlock dans la hiérarchie visuelle du bouton
+            TextBlock textBlock = FindName(textBlockName) as TextBlock;
+
             Page page = new Page();
+            page.Id = textBlock.Text;
             Windows_Container.Children.Add(page);
+            page.RecupererFilmDetail();
+
         }
 
         private void BTN_img2_Click(object sender, RoutedEventArgs e)
@@ -137,6 +145,10 @@ namespace Film_Tsiory_Andrianasoloharison.View
                     string nomTextBlock = "Titre" + i;
                     TextBlock textBlock = FindName(nomTextBlock) as TextBlock;
                     textBlock.Text = movie.original_title;
+
+                    string nomTextBlockID = "Id" + i;
+                    TextBlock textBlockId = FindName(nomTextBlockID) as TextBlock;
+                    textBlockId.Text = movie.id.ToString();
 
                     i++;
                 }

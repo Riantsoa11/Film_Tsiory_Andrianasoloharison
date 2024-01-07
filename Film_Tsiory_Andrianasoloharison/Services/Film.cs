@@ -35,5 +35,24 @@ namespace Film_Tsiory_Andrianasoloharison.Services
             }
         }
 
+        public async Task<string> RecupererFilmById(string Id)
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                string endpoint = $"movie/{Id}?api_key={apiKey}&language=fr-FR";
+                HttpResponseMessage response = await client.GetAsync(apiUrl + endpoint);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return await response.Content.ReadAsStringAsync();
+                }
+                else
+                {
+                    // Gérer l'erreur ici
+                    return null;
+                }
+            }
+        }
+
     }
 }
