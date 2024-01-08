@@ -101,30 +101,46 @@ namespace Film_Tsiory_Andrianasoloharison
     {
         public MainWindow()
         {
+            // Initialisation de la fenêtre principale
             InitializeComponent();
+            // Effacer les enfants du conteneur Windows_Container
             Windows_Container.Children.Clear();
+            // Créer une instance de la vue Home
             View.Home home = new View.Home();
-            Windows_Container.Children.Add(home);
-        }
-        
-        private void BTN_Home_Click(object sender, RoutedEventArgs e)
-        {
-            Windows_Container.Children.Clear();
-            View.Home home = new View.Home();
+            // Ajouter la vue Home comme enfant du conteneur Windows_Container
             Windows_Container.Children.Add(home);
         }
 
+        // Méthode appelée lors du clic sur le bouton Home (BTN_Home)
+        private void BTN_Home_Click(object sender, RoutedEventArgs e)
+        {
+            // Effacer les enfants du conteneur Windows_Container
+            Windows_Container.Children.Clear();
+            // Créer une nouvelle instance de la vue Home
+            View.Home home = new View.Home();
+            // Ajouter la vue Home comme enfant du conteneur Windows_Container
+            Windows_Container.Children.Add(home);
+        }
+
+        // Méthode appelée lors du clic sur le bouton Liste (BTN_Liste)
         private void BTN_Liste_Click(object sender, RoutedEventArgs e)
         {
+            // Effacer les enfants du conteneur Windows_Container
             Windows_Container.Children.Clear();
+            // Créer une nouvelle instance de la vue Liste
             View.Liste liste = new View.Liste();
+            // Ajouter la vue Liste comme enfant du conteneur Windows_Container
             Windows_Container.Children.Add(liste);
         }
 
+        // Méthode appelée lors du clic sur le bouton Favori (BTN_Favori)
         private void BTN_Favori_Click(object sender, RoutedEventArgs e)
         {
+            // Effacer les enfants du conteneur Windows_Container
             Windows_Container.Children.Clear();
+            // Créer une nouvelle instance de la vue Favori
             View.Favori favori = new View.Favori();
+            // Ajouter la vue Favori comme enfant du conteneur Windows_Container
             Windows_Container.Children.Add(favori); 
         }
 

@@ -58,7 +58,7 @@
 
             <!-- Colonne 1 Row 4-->
             <Grid Grid.Row="4">
-                <TextBlock Name="Apercu" HorizontalAlignment="Center" VerticalAlignment="Center" Width="450" Height="130" TextWrapping="Wrap">
+                <TextBlock Name="Apercu" HorizontalAlignment="Center" VerticalAlignment="Center" Width="450" Height="130" TextWrapping="Wrap" FontFamily="Arial,sans-serif">
                         Après qu'une émeute du Black Friday se soit terminée par une tragédie, un mystérieux tueur inspiré de Thanksgiving terrorise Plymouth, dans le Massachusetts, le lieu de naissance de la fête. En éliminant les résidents un par un, ce qui commence comme des meurtres aléatoires par vengeance se révèle bientôt faire partie d'un plan de vacances plus vaste et sinistre.
                 </TextBlock>
             </Grid>
