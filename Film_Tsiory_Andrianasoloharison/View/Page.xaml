@@ -16,7 +16,7 @@
 
         <!-- Colonne0-->
         <Grid Grid.Column="0">
-            <Image  Source="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" Stretch="UniformToFill" />
+            <Image Name="Image" Source="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" Stretch="UniformToFill" />
         </Grid>
             
         <!-- Colonne 1-->
@@ -58,7 +58,7 @@
 
             <!-- Colonne 1 Row 4-->
             <Grid Grid.Row="4">
-                <TextBlock Name="Apercu" HorizontalAlignment="Center" VerticalAlignment="Center" Width="400" Height="120" TextWrapping="Wrap">
+                <TextBlock Name="Apercu" HorizontalAlignment="Center" VerticalAlignment="Center" Width="450" Height="130" TextWrapping="Wrap">
                         Après qu'une émeute du Black Friday se soit terminée par une tragédie, un mystérieux tueur inspiré de Thanksgiving terrorise Plymouth, dans le Massachusetts, le lieu de naissance de la fête. En éliminant les résidents un par un, ce qui commence comme des meurtres aléatoires par vengeance se révèle bientôt faire partie d'un plan de vacances plus vaste et sinistre.
                 </TextBlock>
             </Grid>

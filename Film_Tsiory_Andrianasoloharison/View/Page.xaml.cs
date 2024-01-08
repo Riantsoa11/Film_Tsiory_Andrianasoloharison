@@ -40,6 +40,11 @@ namespace Film_Tsiory_Andrianasoloharison.View
 
             Titre.Text = root.original_title;
 
+            //Code pour afficher l'image
+            string urlImg = "https://image.tmdb.org/t/p/w500";
+            string urlImagePourDetailsPage = urlImg + root.poster_path;
+            Image.Source = new BitmapImage(new Uri(urlImagePourDetailsPage));
+
 
             string genres = "";
             int count = root.genres.Count;
