@@ -6,7 +6,251 @@
              xmlns:local="clr-namespace:Film_Tsiory_Andrianasoloharison.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="Green" Name="Windows_Container">
-        
+    <Grid Background="White" Name="Windows_Container">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <!--row1 -->
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="0">
+
+                    <Button Name="Img_favori_1"  Margin="5" Width="180">
+                        <Button.Background>
+                            <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" />
+                        </Button.Background>
+                    </Button>
+
+            </Grid>
+
+                <Grid Grid.Column="1">
+
+                <Button Background="Red" Name="BTN_1_Delete" Width="125"  Height="90">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="BorderBrush" Value="Black"/>
+                            <Setter Property="BorderThickness" Value="1"/>
+                            <Setter Property="Foreground" Value="#333333"/>
+                            <Setter Property="Padding" Value="5"/>
+                            <Setter Property="Cursor" Value="Hand"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Grid>
+                                            <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5"/>
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#6fa8dc"/>
+                                </Trigger>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter Property="Background" Value="#5a7a96"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <StackPanel>
+                        <Image Height="40" Width="60" Source="D:\Tsiory\Projet\Film_Tsiory_Andrianasoloharison\Film_Tsiory_Andrianasoloharison\Ressources\Images\bin.png"/>
+                        <TextBlock Text="Favori" FontSize="12" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+
+            </Grid>
+            
+        </Grid>
+
+        <!--row1 -->
+        <Grid Grid.Row="1">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+
+                <Button Name="Img_favori_2"  Margin="5" Width="180">
+                    <Button.Background>
+                        <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" />
+                    </Button.Background>
+                </Button>
+
+
+            </Grid>
+
+            <Grid Grid.Column="1">
+
+                <Button Background="Red" Name="BTN_2_Delete" Width="125" Height="90">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="BorderBrush" Value="Black"/>
+                            <Setter Property="BorderThickness" Value="1"/>
+                            <Setter Property="Foreground" Value="#333333"/>
+                            <Setter Property="Padding" Value="5"/>
+                            <Setter Property="Cursor" Value="Hand"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Grid>
+                                            <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5"/>
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#6fa8dc"/>
+                                </Trigger>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter Property="Background" Value="#5a7a96"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <StackPanel>
+                        <Image Height="40" Width="60" Source="D:\Tsiory\Projet\Film_Tsiory_Andrianasoloharison\Film_Tsiory_Andrianasoloharison\Ressources\Images\bin.png"/>
+                        <TextBlock Text="Favori" FontSize="12" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+
+            </Grid>
+
+        </Grid>
+
+        <!--row1 -->
+        <Grid Grid.Row="2">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+
+                <Button Name="Img_favori_3"  Margin="5" Width="180">
+                    <Button.Background>
+                        <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" />
+                    </Button.Background>
+                </Button>
+
+
+            </Grid>
+
+            <Grid Grid.Column="1">
+
+                <Button Background="Red" Name="BTN_3_Delete" Width="125"  Height="90" >
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="BorderBrush" Value="Black"/>
+                            <Setter Property="BorderThickness" Value="1"/>
+                            <Setter Property="Foreground" Value="#333333"/>
+                            <Setter Property="Padding" Value="5"/>
+                            <Setter Property="Cursor" Value="Hand"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Grid>
+                                            <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5"/>
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#6fa8dc"/>
+                                </Trigger>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter Property="Background" Value="#5a7a96"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <StackPanel>
+                        <Image Height="40" Width="60" Source="D:\Tsiory\Projet\Film_Tsiory_Andrianasoloharison\Film_Tsiory_Andrianasoloharison\Ressources\Images\bin.png"/>
+                        <TextBlock Text="Favori" FontSize="12" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+
+            </Grid>
+
+        </Grid>
+
+        <!--row1 -->
+        <Grid Grid.Row="3">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+
+                <Button Name="Img_favori_4"  Margin="5" Width="180">
+                    <Button.Background>
+                        <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" />
+                    </Button.Background>
+                </Button>
+
+
+            </Grid>
+
+            <Grid Grid.Column="1">
+
+                <Button Background="Red" Name="BTN_4_Delete" Width="125" Height="90">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="BorderBrush" Value="Black"/>
+                            <Setter Property="BorderThickness" Value="1"/>
+                            <Setter Property="Foreground" Value="#333333"/>
+                            <Setter Property="Padding" Value="5"/>
+                            <Setter Property="Cursor" Value="Hand"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Grid>
+                                            <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5"/>
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#6fa8dc"/>
+                                </Trigger>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter Property="Background" Value="#5a7a96"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <StackPanel>
+                        <Image Height="40" Width="60" Source="D:\Tsiory\Projet\Film_Tsiory_Andrianasoloharison\Film_Tsiory_Andrianasoloharison\Ressources\Images\bin.png"/>
+                        <TextBlock Text="Favori" FontSize="12" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+
+            </Grid>
+
+        </Grid>
+
     </Grid>
 </UserControl>

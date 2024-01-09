@@ -66,7 +66,22 @@
                 </Grid>
                 <!--Colonne 4-->
                 <Grid Grid.Row="0" Grid.Column="4" Background="#8ecae6">
-                
+
+                    <ListBox Name="maListBox" ItemsSource="{Binding}" Width="200" Height="45" FontSize="18">
+                        <ListBox.Resources>
+                            <!-- Style pour les éléments de la ListBox -->
+                            <Style TargetType="ListBoxItem">
+                                <Setter Property="Padding" Value="10"/>
+                            <Setter Property="Foreground" Value="#3498db"/>
+                            </Style>
+                        </ListBox.Resources>
+                        <ListBox.Items>
+                            <ListBoxItem>Populaire</ListBoxItem>
+                            <ListBoxItem>Les mieux notés</ListBoxItem>
+                            <ListBoxItem>A venir</ListBoxItem>
+                        </ListBox.Items>
+                    </ListBox>
+
 
                 </Grid>
 
