@@ -47,7 +47,7 @@
             <!-- Colonne 1 Row 2-->
             <Grid Grid.Row="2" Name="Boutton">
 
-                <Button Background="Red" Name="Favori"  Width="125" >
+                <Button Background="Red" Name="Favori"  Width="125" Click="Favori_Click" >
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="BorderBrush" Value="Black"/>

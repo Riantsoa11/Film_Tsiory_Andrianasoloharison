@@ -95,5 +95,15 @@ namespace Film_Tsiory_Andrianasoloharison.View
             // Afficher les pays de production
             Production_countries.Text = pays;
         }
+
+        private void Favori_Click(object sender, RoutedEventArgs e)
+        {
+            Windows_Container.RowDefinitions.Clear();
+            Windows_Container.Children.Clear();
+            Button button = sender as Button;
+            Favori favori = new Favori();
+            Windows_Container.Children.Add(favori);
+            
+        }
     }
 }

@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Film_Tsiory_Andrianasoloharison.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="400" d:DesignWidth="800">
     <Grid Background="White" Name="Windows_Container">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>
@@ -19,6 +19,7 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
                 <Grid Grid.Column="0">
@@ -29,9 +30,16 @@
                         </Button.Background>
                     </Button>
 
-            </Grid>
+                </Grid>
 
                 <Grid Grid.Column="1">
+
+                <TextBlock FontSize="20" TextAlignment="Center" Grid.ColumnSpan="2" Name="Favorititre1" FontFamily="Arial,sans-serif" FontWeight="Bold" VerticalAlignment="Center">Action de grâces</TextBlock>
+                <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id_favori1" Visibility="Hidden"></TextBlock>
+
+            </Grid>
+
+                <Grid Grid.Column="2">
 
                 <Button Background="Red" Name="BTN_1_Delete" Width="125"  Height="90">
                     <Button.Style>
@@ -63,7 +71,7 @@
                     </Button.Style>
                     <StackPanel>
                         <Image Height="40" Width="60" Source="D:\Tsiory\Projet\Film_Tsiory_Andrianasoloharison\Film_Tsiory_Andrianasoloharison\Ressources\Images\bin.png"/>
-                        <TextBlock Text="Favori" FontSize="12" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <TextBlock Text="Supprimer" FontSize="12" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                     </StackPanel>
                 </Button>
 
@@ -76,6 +84,7 @@
         <Grid Grid.Row="1">
 
             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
@@ -92,6 +101,13 @@
             </Grid>
 
             <Grid Grid.Column="1">
+
+                <TextBlock FontSize="20" TextAlignment="Center" Grid.ColumnSpan="2" Name="Favorititre2" FontFamily="Arial,sans-serif" FontWeight="Bold" VerticalAlignment="Center">Action de grâces</TextBlock>
+                <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id_favori2" Visibility="Hidden"></TextBlock>
+
+            </Grid>
+
+            <Grid Grid.Column="2">
 
                 <Button Background="Red" Name="BTN_2_Delete" Width="125" Height="90">
                     <Button.Style>
@@ -123,7 +139,7 @@
                     </Button.Style>
                     <StackPanel>
                         <Image Height="40" Width="60" Source="D:\Tsiory\Projet\Film_Tsiory_Andrianasoloharison\Film_Tsiory_Andrianasoloharison\Ressources\Images\bin.png"/>
-                        <TextBlock Text="Favori" FontSize="12" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <TextBlock Text="Supprimer" FontSize="12" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                     </StackPanel>
                 </Button>
 
@@ -136,6 +152,7 @@
         <Grid Grid.Row="2">
 
             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
@@ -152,6 +169,13 @@
             </Grid>
 
             <Grid Grid.Column="1">
+
+                <TextBlock FontSize="20" TextAlignment="Center" Grid.ColumnSpan="2" Name="Favorititre3" FontFamily="Arial,sans-serif" FontWeight="Bold" VerticalAlignment="Center">Action de grâces</TextBlock>
+                <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id_favori3" Visibility="Hidden"></TextBlock>
+
+            </Grid>
+
+            <Grid Grid.Column="2">
 
                 <Button Background="Red" Name="BTN_3_Delete" Width="125"  Height="90" >
                     <Button.Style>
@@ -183,7 +207,7 @@
                     </Button.Style>
                     <StackPanel>
                         <Image Height="40" Width="60" Source="D:\Tsiory\Projet\Film_Tsiory_Andrianasoloharison\Film_Tsiory_Andrianasoloharison\Ressources\Images\bin.png"/>
-                        <TextBlock Text="Favori" FontSize="12" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <TextBlock Text="Supprimer" FontSize="12" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                     </StackPanel>
                 </Button>
 
@@ -196,6 +220,7 @@
         <Grid Grid.Row="3">
 
             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
@@ -212,6 +237,13 @@
             </Grid>
 
             <Grid Grid.Column="1">
+
+                <TextBlock FontSize="20" TextAlignment="Center" Grid.ColumnSpan="2" Name="Favorititre4" FontFamily="Arial,sans-serif" FontWeight="Bold" VerticalAlignment="Center">Action de grâces</TextBlock>
+                <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id_favori4" Visibility="Hidden"></TextBlock>
+
+            </Grid>
+
+            <Grid Grid.Column="2">
 
                 <Button Background="Red" Name="BTN_4_Delete" Width="125" Height="90">
                     <Button.Style>
@@ -243,7 +275,7 @@
                     </Button.Style>
                     <StackPanel>
                         <Image Height="40" Width="60" Source="D:\Tsiory\Projet\Film_Tsiory_Andrianasoloharison\Film_Tsiory_Andrianasoloharison\Ressources\Images\bin.png"/>
-                        <TextBlock Text="Favori" FontSize="12" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <TextBlock Text="Supprimer" FontSize="12" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                     </StackPanel>
                 </Button>
 
