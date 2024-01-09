@@ -34,7 +34,7 @@
                 <!--Colonne 0 Row 0-->
                 <Grid Grid.Row="0">
                     
-                    <Button Name="Img1" Click="BTN_img1_Click">
+                    <Button Name="Img1" Click="BTN_img1_Click" Margin="5">
                         <Button.Background>
                             <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" />
                         </Button.Background>
@@ -45,7 +45,7 @@
 
                 <!--Colonne 0 Row 1-->
                 <Grid Grid.Row="1">
-                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Titre1">Action de grâces</TextBlock>
+                    <TextBlock FontSize="20" TextAlignment="Center" Grid.ColumnSpan="2" Name="Titre1" FontFamily="Arial,sans-serif" FontWeight="Bold">Action de grâces</TextBlock>
                     <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id1" Visibility="Hidden"></TextBlock>
                 </Grid>
 
@@ -61,7 +61,7 @@
                 <!--Colonne 1 Row 0-->
                 <Grid Grid.Row="0">
 
-                    <Button Name="Img2" Click="BTN_img2_Click">
+                    <Button Name="Img2" Click="BTN_img2_Click" Margin="5">
                         <Button.Background>
                             <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/ui4DrH1cKk2vkHshcUcGt2lKxCm.jpg" />
                         </Button.Background>
@@ -71,7 +71,7 @@
 
                 <!--Colonne 1 Row 1-->
                 <Grid Grid.Row="1">
-                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Titre2">Action de grâces</TextBlock>
+                    <TextBlock FontSize="20" TextAlignment="Center" Grid.ColumnSpan="2" Name="Titre2" FontFamily="Arial,sans-serif" FontWeight="Bold">Action de grâces</TextBlock>
                     <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id2" Visibility="Hidden"></TextBlock>
                 </Grid>
 
@@ -86,8 +86,8 @@
 
                 <!--Colonne 2 Row 0-->
                 <Grid Grid.Row="0">
-                    
-                    <Button Name="Img3" Click="BTN_img3_Click">
+
+                    <Button Name="Img3" Click="BTN_img3_Click" Margin="5">
                         <Button.Background>
                             <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" />
                         </Button.Background>
@@ -97,7 +97,7 @@
 
                 <!--Colonne 2 Row 1-->
                 <Grid Grid.Row="1">
-                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Titre3">Action de grâces</TextBlock>
+                    <TextBlock FontSize="20" TextAlignment="Center" Grid.ColumnSpan="2" Name="Titre3" FontFamily="Arial,sans-serif" FontWeight="Bold">Action de grâces</TextBlock>
                     <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id3" Visibility="Hidden"></TextBlock>
                 </Grid>
 
@@ -112,8 +112,8 @@
 
                 <!--Colonne 3 Row 0-->
                 <Grid Grid.Row="0">
-                    
-                    <Button Name="Img4" Click="BTN_img4_Click">
+
+                    <Button Name="Img4" Click="BTN_img4_Click" Margin="5">
                         <Button.Background>
                             <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/ui4DrH1cKk2vkHshcUcGt2lKxCm.jpg" />
                         </Button.Background>
@@ -123,7 +123,7 @@
 
                 <!--Colonne 3 Row 1-->
                 <Grid Grid.Row="1">
-                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Titre4">Action de grâces</TextBlock>
+                    <TextBlock FontSize="20" TextAlignment="Center" Grid.ColumnSpan="2" Name="Titre4" FontFamily="Arial,sans-serif" FontWeight="Bold">Action de grâces</TextBlock>
                     <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id4" Visibility="Hidden"></TextBlock>
                 </Grid>
             </Grid>
@@ -150,8 +150,8 @@
 
                 <!--Colonne 0 Row 0-->
                 <Grid Grid.Row="0">
-                    
-                    <Button Name="Img5" Click="BTN_img5_Click">
+
+                    <Button Name="Img5" Click="BTN_img5_Click" Margin="5">
                         <Button.Background>
                             <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/ui4DrH1cKk2vkHshcUcGt2lKxCm.jpg" />
                         </Button.Background>
@@ -161,7 +161,7 @@
 
                 <!--Colonne 0 Row 1-->
                 <Grid Grid.Row="1">
-                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Titre5">Action de grâces</TextBlock>
+                    <TextBlock FontSize="20" TextAlignment="Center" Grid.ColumnSpan="2" Name="Titre5" FontFamily="Arial,sans-serif" FontWeight="Bold">Action de grâces</TextBlock>
                     <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id5" Visibility="Hidden"></TextBlock>
                 </Grid>
             </Grid>
@@ -175,8 +175,8 @@
 
                 <!--Colonne 1 Row 0-->
                 <Grid Grid.Row="0">
-                    
-                    <Button Name="Img6" Click="BTN_img6_Click">
+
+                    <Button Name="Img6" Click="BTN_img6_Click" Margin="5">
                         <Button.Background>
                             <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" />
                         </Button.Background>
@@ -186,7 +186,7 @@
 
                 <!--Colonne 1 Row 1-->
                 <Grid Grid.Row="1">
-                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Titre6">Action de grâces</TextBlock>
+                    <TextBlock FontSize="20" TextAlignment="Center" Grid.ColumnSpan="2" Name="Titre6" FontFamily="Arial,sans-serif" FontWeight="Bold">Action de grâces</TextBlock>
                     <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id6" Visibility="Hidden"></TextBlock>
                 </Grid>
             </Grid>
@@ -200,8 +200,8 @@
 
                 <!--Colonne 2 Row 0-->
                 <Grid Grid.Row="0">
-                    
-                    <Button Name="Img7" Click="BTN_img7_Click">
+
+                    <Button Name="Img7" Click="BTN_img7_Click" Margin="5">
                         <Button.Background>
                             <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/ui4DrH1cKk2vkHshcUcGt2lKxCm.jpg" />
                         </Button.Background>
@@ -211,7 +211,7 @@
 
                 <!--Colonne 2 Row 1-->
                 <Grid Grid.Row="1">
-                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Titre7">Action de grâces</TextBlock>
+                    <TextBlock FontSize="20" TextAlignment="Center" Grid.ColumnSpan="2" Name="Titre7" FontFamily="Arial,sans-serif" FontWeight="Bold">Action de grâces</TextBlock>
                     <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id7" Visibility="Hidden"></TextBlock>
                 </Grid>
             </Grid>
@@ -225,8 +225,8 @@
 
                 <!--Colonne 3 Row 0-->
                 <Grid Grid.Row="0">
-     
-                    <Button Name="Img8" Click="BTN_img8_Click">
+
+                    <Button Name="Img8" Click="BTN_img8_Click" Margin="5">
                         <Button.Background>
                             <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" />
                         </Button.Background>
@@ -236,7 +236,7 @@
 
                 <!--Colonne 3 Row 1-->
                 <Grid Grid.Row="1">
-                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Titre8">Action de grâces</TextBlock>
+                    <TextBlock FontSize="20" TextAlignment="Center" Grid.ColumnSpan="2" Name="Titre8" FontFamily="Arial,sans-serif" FontWeight="Bold">Action de grâces</TextBlock>
                     <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id8" Visibility="Hidden"></TextBlock>
                 </Grid>
             </Grid>

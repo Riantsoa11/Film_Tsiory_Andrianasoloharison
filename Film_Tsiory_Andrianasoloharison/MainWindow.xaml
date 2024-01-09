@@ -36,7 +36,7 @@
                     <Button  Background="#8ecae6" Name="BTN_Home" Click="BTN_Home_Click">
                         <StackPanel>
                             <Image Height="40" Width="60" Source="D:\Tsiory\Projet\Film_Tsiory_Andrianasoloharison\Film_Tsiory_Andrianasoloharison\Ressources\Images\home.png"/>
-                            <Label Content="Home" FontSize="10" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <Label Content="Home" FontSize="13" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                         </StackPanel>
                     </Button>
 
@@ -48,7 +48,7 @@
                     <Button  Background="#8ecae6" Name="BTN_Liste" Click="BTN_Liste_Click">
                         <StackPanel>
                             <Image Height="40" Width="60" Source="D:\Tsiory\Projet\Film_Tsiory_Andrianasoloharison\Film_Tsiory_Andrianasoloharison\Ressources\Images\liste.png"/>
-                            <Label Content="Liste" FontSize="10" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <Label Content="Film" FontSize="13" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                         </StackPanel>
                     </Button>
 
@@ -59,24 +59,52 @@
                     <Button  Background="#8ecae6" Name="Favori" Click="BTN_Favori_Click">
                         <StackPanel>
                             <Image Height="40" Width="60" Source="D:\Tsiory\Projet\Film_Tsiory_Andrianasoloharison\Film_Tsiory_Andrianasoloharison\Ressources\Images\favorites.png"/>
-                            <Label Content="Favori" FontSize="10" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <Label Content="Favori" FontSize="13" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                         </StackPanel>
                     </Button>
 
                 </Grid>
                 <!--Colonne 4-->
                 <Grid Grid.Row="0" Grid.Column="4" Background="#8ecae6">
-
-                    <TextBox HorizontalAlignment="Right" Height="30" TextWrapping="Wrap" Text="Recherche" FontSize="18" VerticalAlignment="Center" Width="282"/>
+                
 
                 </Grid>
 
                 <!--Colonne 5-->
                 <Grid Grid.Row="0" Grid.Column="5" Background="#8ecae6">
 
+                    <Button Content="Valider" HorizontalAlignment="Left" Height="45" Width="75">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#3498db"/>
+                                <!-- Couleur de fond -->
+                                <Setter Property="Foreground" Value="White"/>
+                                <!-- Couleur du texte -->
+                                <Setter Property="FontFamily" Value="Arial"/>
+                                <!-- Police -->
+                                <Setter Property="FontSize" Value="16"/>
+                                <!-- Taille de la police -->
+                                <Setter Property="BorderThickness" Value="2"/>
+                                <!-- Épaisseur de la bordure -->
+                                <Setter Property="BorderBrush" Value="#2980b9"/>
+                                <!-- Coins arrondis -->
+                                <Setter Property="Padding" Value="10,5"/>
+                                <!-- Remplissage interne -->
+                                <Style.Triggers>
+                                    <!-- Effet de survol -->
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="Red"/>
+                                    </Trigger>
+                                    <!-- Effet de clic -->
+                                    <Trigger Property="IsPressed" Value="True">
+                                        <Setter Property="Background" Value="#1f618d"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                    </Button>
 
-
-                </Grid>
+            </Grid>
 
         </Grid>
         

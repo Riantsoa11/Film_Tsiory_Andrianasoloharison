@@ -32,7 +32,7 @@
 
             <!-- Colonne 1 Row 0-->
             <Grid Grid.Row="0">
-                <TextBlock Name="Titre" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock Name="Titre" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Arial" FontWeight="Bold">
                         Action de grâces (2023)
                 </TextBlock>
             </Grid>
@@ -47,18 +47,53 @@
             <!-- Colonne 1 Row 2-->
             <Grid Grid.Row="2" Name="Boutton">
 
+                <Button Background="Red" Name="Favori" Width="125" >
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="BorderBrush" Value="Black"/>
+                            <Setter Property="BorderThickness" Value="1"/>
+                            <Setter Property="Foreground" Value="#333333"/>
+                            <Setter Property="Padding" Value="5"/>
+                            <Setter Property="Cursor" Value="Hand"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Grid>
+                                            <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5"/>
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#6fa8dc"/>
+                                </Trigger>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter Property="Background" Value="#5a7a96"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <StackPanel>
+                        <Image Height="40" Width="60" Source="D:\Tsiory\Projet\Film_Tsiory_Andrianasoloharison\Film_Tsiory_Andrianasoloharison\Ressources\Images\favorites.png"/>
+                        <TextBlock Text="Favori" FontSize="12" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+
             </Grid>
 
             <!-- Colonne 1 Row 3-->
             <Grid Grid.Row="3">
-                <TextBlock FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Center" >
+                <TextBlock FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold">
                         Aperçu
                 </TextBlock>
             </Grid>
 
             <!-- Colonne 1 Row 4-->
             <Grid Grid.Row="4">
-                <TextBlock Name="Apercu" HorizontalAlignment="Center" VerticalAlignment="Center" Width="450" Height="130" TextWrapping="Wrap" FontFamily="Arial,sans-serif">
+                <TextBlock Name="Apercu" HorizontalAlignment="Center" VerticalAlignment="Center" Width="450" Height="130" TextWrapping="Wrap" FontFamily="Arial,sans-serif" FontSize="14">
                         Après qu'une émeute du Black Friday se soit terminée par une tragédie, un mystérieux tueur inspiré de Thanksgiving terrorise Plymouth, dans le Massachusetts, le lieu de naissance de la fête. En éliminant les résidents un par un, ce qui commence comme des meurtres aléatoires par vengeance se révèle bientôt faire partie d'un plan de vacances plus vaste et sinistre.
                 </TextBlock>
             </Grid>
@@ -74,13 +109,13 @@
 
                 <!-- Colonne 0 -->
                 <Grid Grid.Column="0">
-                    <TextBlock Name="Production_companies" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Center" >
+                    <TextBlock Name="Production_companies" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold">
                                     Eli Roth
                     </TextBlock>
                 </Grid>
                 <!-- Colonne 1 -->
                 <Grid Grid.Column="1">
-                    <TextBlock Name ="Production_countries" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Center" >
+                    <TextBlock Name ="Production_countries" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" >
                                     Jeff Rendell
 
                     </TextBlock>
