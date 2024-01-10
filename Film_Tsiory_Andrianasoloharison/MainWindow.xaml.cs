@@ -17,15 +17,15 @@ using System.Net.Http;
 using Newtonsoft.Json;
 using System.IO;
 using System.Diagnostics;
-
-
+using Film_Tsiory_Andrianasoloharison.View;
+using Film_Tsiory_Andrianasoloharison.Services;
 
 namespace Film_Tsiory_Andrianasoloharison
 {
     /// <summary>
     /// Logique d'interaction pour MainWindow.xaml
     /// </summary>
-    
+
     public class BelongsToCollection
     {
         public int id { get; set; }
@@ -33,13 +33,13 @@ namespace Film_Tsiory_Andrianasoloharison
         public string poster_path { get; set; }
         public string backdrop_path { get; set; }
     }
- 
+
     public class Genre
     {
         public int id { get; set; }
         public string name { get; set; }
     }
- 
+
     public class ProductionCompany
     {
         public int id { get; set; }
@@ -47,13 +47,13 @@ namespace Film_Tsiory_Andrianasoloharison
         public string name { get; set; }
         public string origin_country { get; set; }
     }
- 
+
     public class ProductionCountry
     {
         public string iso_3166_1 { get; set; }
         public string name { get; set; }
     }
- 
+
     public class Root
     {
         public bool adult { get; set; }
@@ -89,6 +89,11 @@ namespace Film_Tsiory_Andrianasoloharison
         public List<Root> Films { get; set; }
     }
 
+    public class GenreContainer
+    {
+        public List<Genre> Genres { get; set; }
+    }
+
 
     public class SpokenLanguage
     {
@@ -96,13 +101,15 @@ namespace Film_Tsiory_Andrianasoloharison
         public string iso_639_1 { get; set; }
         public string name { get; set; }
     }
- 
+
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             // Initialisation de la fenêtre principale
             InitializeComponent();
+            ListeGenre();
+
             // Effacer les enfants du conteneur Windows_Container
             Windows_Container.Children.Clear();
             // Créer une instance de la vue Home
@@ -125,6 +132,7 @@ namespace Film_Tsiory_Andrianasoloharison
         // Méthode appelée lors du clic sur le bouton Liste (BTN_Liste)
         private void BTN_Liste_Click(object sender, RoutedEventArgs e)
         {
+            comboBoxGenres.SelectedItem = null;
             // Effacer les enfants du conteneur Windows_Container
             Windows_Container.Children.Clear();
             // Créer une nouvelle instance de la vue Liste
@@ -141,11 +149,46 @@ namespace Film_Tsiory_Andrianasoloharison
             // Créer une nouvelle instance de la vue Favori
             View.Favori favori = new View.Favori();
             // Ajouter la vue Favori comme enfant du conteneur Windows_Container
-            Windows_Container.Children.Add(favori); 
+            Windows_Container.Children.Add(favori);
         }
 
-        
-    }
 
-    
+        private void Button_Valider_Click(object sender, RoutedEventArgs e)
+        {
+            object selectedValue = comboBoxGenres.SelectedItem;
+            // Vérifiez si une valeur est sélectionnée avant de l'utiliser
+            if (selectedValue != null)
+            {
+                string selectedString = selectedValue.ToString();
+                View.Liste liste = new View.Liste();
+                Windows_Container.Children.Add(liste);
+                liste.RecupererFilmAvecGenre(selectedString);
+
+                // Utilisez la valeur comme nécessaire
+                Console.WriteLine("Valeur sélectionnée : " + selectedString);
+            }
+            else
+            {
+                // Aucune valeur n'est sélectionnée
+                Console.WriteLine("Aucune valeur sélectionnée.");
+            }
+
+
+        }
+
+        public async void ListeGenre()
+        {
+            Film film = new Film();
+            string genre = await film.RecuperGenre();
+            // Désérialiser la liste des films à partir de la chaîne JSON
+            var genres = JsonConvert.DeserializeObject<GenreContainer>(genre);
+
+            foreach (var g in genres.Genres)
+            {
+                comboBoxGenres.Items.Add(g.name);
+            }
+        }
+
+
+    }
 }

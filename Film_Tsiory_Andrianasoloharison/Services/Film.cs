@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Net.Http;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace Film_Tsiory_Andrianasoloharison.Services
 {
@@ -37,6 +39,56 @@ namespace Film_Tsiory_Andrianasoloharison.Services
             }
         }
 
+        public async Task<string> RecupererFilmAvecGenre(string genreId)
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                // Construction de l'URL d'endpoint pour les films populaires
+                string endpoint = $"discover/movie?api_key={apiKey}&with_genres={genreId}";
+            
+                // Envoi de la requête HTTP GET à l'API
+                HttpResponseMessage response = await client.GetAsync(apiUrl + endpoint);
+
+                // Vérification si la requête a réussi
+                if (response.IsSuccessStatusCode)
+                {
+                    // Retourne la réponse sous forme de chaîne JSON
+                    return await response.Content.ReadAsStringAsync();
+                }
+                else
+                {
+                    // Gérer l'erreur ici (peut retourner une chaîne vide ou une indication d'erreur)
+                    return null;
+                }
+            }
+        }
+
+        public async Task<string> RecuperGenre()
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                // Construction de l'URL d'endpoint pour les films populaires
+                string endpoint = $"genre/movie/list?api_key={apiKey}";
+
+                // Envoi de la requête HTTP GET à l'API
+                HttpResponseMessage response = await client.GetAsync(apiUrl + endpoint);
+
+                // Vérification si la requête a réussi
+                if (response.IsSuccessStatusCode)
+                {
+                    // Retourne la réponse sous forme de chaîne JSON
+                    return await response.Content.ReadAsStringAsync();
+                }
+                else
+                {
+                    // Gérer l'erreur ici (peut retourner une chaîne vide ou une indication d'erreur)
+                    return null;
+                }
+            }
+
+        }
+
+
         // Méthode pour récupérer les détails d'un film par son ID
         public async Task<string> RecupererFilmById(string Id)
         {
@@ -61,5 +113,6 @@ namespace Film_Tsiory_Andrianasoloharison.Services
                 }
             }
         }
+ 
     }
 }
