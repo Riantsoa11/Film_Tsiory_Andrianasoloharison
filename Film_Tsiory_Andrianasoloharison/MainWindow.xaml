@@ -36,7 +36,7 @@
                     <Button  Background="#8ecae6" Name="BTN_Home" Click="BTN_Home_Click">
                         <StackPanel>
                             <Image Height="40" Width="60" Source="D:\Tsiory\Projet\Film_Tsiory_Andrianasoloharison\Film_Tsiory_Andrianasoloharison\Ressources\Images\home.png"/>
-                            <Label Content="Home" FontSize="13" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <Label Content="Acceuil" FontSize="13" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                         </StackPanel>
                     </Button>
 
@@ -48,7 +48,7 @@
                     <Button  Background="#8ecae6" Name="BTN_Liste" Click="BTN_Liste_Click">
                         <StackPanel>
                             <Image Height="40" Width="60" Source="D:\Tsiory\Projet\Film_Tsiory_Andrianasoloharison\Film_Tsiory_Andrianasoloharison\Ressources\Images\liste.png"/>
-                            <Label Content="Film" FontSize="13" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <Label Content="Film populaire" FontSize="13" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                         </StackPanel>
                     </Button>
 

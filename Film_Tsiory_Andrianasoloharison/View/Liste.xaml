@@ -35,9 +35,7 @@
                 <Grid Grid.Row="0">
                     
                     <Button Name="Img1" Click="BTN_img1_Click" Margin="5">
-                        <Button.Background>
-                            <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" />
-                        </Button.Background>
+                       
                     </Button>
 
                 </Grid>
@@ -62,9 +60,7 @@
                 <Grid Grid.Row="0">
 
                     <Button Name="Img2" Click="BTN_img2_Click" Margin="5">
-                        <Button.Background>
-                            <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/ui4DrH1cKk2vkHshcUcGt2lKxCm.jpg" />
-                        </Button.Background>
+                       
                     </Button>
                     
                 </Grid>
@@ -88,9 +84,7 @@
                 <Grid Grid.Row="0">
 
                     <Button Name="Img3" Click="BTN_img3_Click" Margin="5">
-                        <Button.Background>
-                            <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" />
-                        </Button.Background>
+                       
                     </Button>
 
                 </Grid>
@@ -114,9 +108,7 @@
                 <Grid Grid.Row="0">
 
                     <Button Name="Img4" Click="BTN_img4_Click" Margin="5">
-                        <Button.Background>
-                            <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/ui4DrH1cKk2vkHshcUcGt2lKxCm.jpg" />
-                        </Button.Background>
+                        
                     </Button>
 
                 </Grid>
@@ -152,9 +144,7 @@
                 <Grid Grid.Row="0">
 
                     <Button Name="Img5" Click="BTN_img5_Click" Margin="5">
-                        <Button.Background>
-                            <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/ui4DrH1cKk2vkHshcUcGt2lKxCm.jpg" />
-                        </Button.Background>
+                        
                     </Button>
                     
                 </Grid>
@@ -177,9 +167,7 @@
                 <Grid Grid.Row="0">
 
                     <Button Name="Img6" Click="BTN_img6_Click" Margin="5">
-                        <Button.Background>
-                            <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" />
-                        </Button.Background>
+                        
                     </Button>
 
                 </Grid>
@@ -202,9 +190,7 @@
                 <Grid Grid.Row="0">
 
                     <Button Name="Img7" Click="BTN_img7_Click" Margin="5">
-                        <Button.Background>
-                            <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/ui4DrH1cKk2vkHshcUcGt2lKxCm.jpg" />
-                        </Button.Background>
+                        
                     </Button>
                     
                 </Grid>
@@ -227,9 +213,7 @@
                 <Grid Grid.Row="0">
 
                     <Button Name="Img8" Click="BTN_img8_Click" Margin="5">
-                        <Button.Background>
-                            <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" />
-                        </Button.Background>
+                        
                     </Button>
 
                 </Grid>

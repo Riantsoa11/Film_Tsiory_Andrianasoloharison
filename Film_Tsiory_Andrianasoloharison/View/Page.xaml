@@ -16,7 +16,7 @@
 
         <!-- Colonne0-->
         <Grid Grid.Column="0">
-            <Image Name="Image" Source="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" Stretch="UniformToFill" />
+            <Image Name="Image" Stretch="UniformToFill" />
         </Grid>
             
         <!-- Colonne 1-->
