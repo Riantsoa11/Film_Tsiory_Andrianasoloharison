@@ -131,17 +131,13 @@
     <Resource Include="Ressources\Images\liste.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Ressources\Images\home.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
+    <Resource Include="Ressources\Images\home.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Ressources\Images\favorites.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Ressources\Images\bin.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
+    <Resource Include="Ressources\Images\bin.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

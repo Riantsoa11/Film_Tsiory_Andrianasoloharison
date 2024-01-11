@@ -121,7 +121,7 @@ namespace Film_Tsiory_Andrianasoloharison
         // Méthode appelée lors du clic sur le bouton Home (BTN_Home)
         private void BTN_Home_Click(object sender, RoutedEventArgs e)
         {
-            BitmapImage image = new BitmapImage(new Uri("home.png", UriKind.Relative));
+            
             // Effacer les enfants du conteneur Windows_Container
             Windows_Container.Children.Clear();
             // Créer une nouvelle instance de la vue Home
@@ -133,7 +133,6 @@ namespace Film_Tsiory_Andrianasoloharison
         // Méthode appelée lors du clic sur le bouton Liste (BTN_Liste)
         private void BTN_Liste_Click(object sender, RoutedEventArgs e)
         {
-            BitmapImage image = new BitmapImage(new Uri("liste.png", UriKind.Relative));
             comboBoxGenres.SelectedItem = null;
             // Effacer les enfants du conteneur Windows_Container
             Windows_Container.Children.Clear();
@@ -146,7 +145,6 @@ namespace Film_Tsiory_Andrianasoloharison
         // Méthode appelée lors du clic sur le bouton Favori (BTN_Favori)
         private void BTN_Favori_Click(object sender, RoutedEventArgs e)
         {
-            BitmapImage image = new BitmapImage(new Uri("favorites.png", UriKind.Relative));
             // Effacer les enfants du conteneur Windows_Container
             Windows_Container.Children.Clear();
             // Créer une nouvelle instance de la vue Favori

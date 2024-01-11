@@ -35,7 +35,7 @@
 
                     <Button  Background="#8ecae6" Name="BTN_Home" Click="BTN_Home_Click">
                         <StackPanel>
-                            <Image Height="40" Width="60" Source="D:\Tsiory\Projet\Film_Tsiory_Andrianasoloharison\Film_Tsiory_Andrianasoloharison\Ressources\Images\home.png"/>
+                            <Image Height="40" Width="60" Name="Home" Source="\Ressources\Images\home.png"/>
                             <Label Content="Acceuil" FontSize="13" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                         </StackPanel>
                     </Button>
@@ -47,7 +47,7 @@
 
                     <Button  Background="#8ecae6" Name="BTN_Liste" Click="BTN_Liste_Click">
                         <StackPanel>
-                            <Image Height="40" Width="60" Source="D:\Tsiory\Projet\Film_Tsiory_Andrianasoloharison\Film_Tsiory_Andrianasoloharison\Ressources\Images\liste.png"/>
+                            <Image Height="40" Width="60" Name="Film" Source="\Ressources\Images\liste.png"/>
                             <Label Content="Film populaire" FontSize="13" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                         </StackPanel>
                     </Button>
@@ -58,7 +58,7 @@
 
                     <Button  Background="#8ecae6" Name="Favori" Click="BTN_Favori_Click">
                         <StackPanel>
-                            <Image Height="40" Width="60" Source="D:\Tsiory\Projet\Film_Tsiory_Andrianasoloharison\Film_Tsiory_Andrianasoloharison\Ressources\Images\favorites.png"/>
+                            <Image Height="40" Width="60"  Name="Fav"  Source="\Ressources\Images\favorites.png"/>
                             <Label Content="Favori" FontSize="13" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                         </StackPanel>
                     </Button>

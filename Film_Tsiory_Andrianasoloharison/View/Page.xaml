@@ -39,7 +39,7 @@
 
             <!-- Colonne 1 Row 1-->
             <Grid Grid.Row="1">
-                <TextBlock Name="Information" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock Name="Information" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16">
                         29/11/2023 (FR)Horreur ,  Mystère ,  Thriller 1h 46min
                 </TextBlock>
             </Grid>
@@ -76,7 +76,7 @@
                         </Style>
                     </Button.Style>
                     <StackPanel>
-                        <Image Height="40" Width="60" Source="D:\Tsiory\Projet\Film_Tsiory_Andrianasoloharison\Film_Tsiory_Andrianasoloharison\Ressources\Images\favorites.png"/>
+                        <Image Height="40" Width="60" Source="\Ressources\Images\favorites.png"/>
                         <TextBlock Text="Favori" FontSize="12" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                     </StackPanel>
                 </Button>
