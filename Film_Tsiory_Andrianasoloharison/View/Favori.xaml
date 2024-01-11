@@ -41,7 +41,7 @@
 
                 <Grid Grid.Column="2">
 
-                <Button Background="Red" Name="BTN_1_Delete" Width="125"  Height="90">
+                <Button Background="Red" Name="BTN_1_Delete" Width="125"  Height="90" Click="BTN_1_Delete_Click">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="BorderBrush" Value="Black"/>

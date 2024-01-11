@@ -24,5 +24,10 @@ namespace Film_Tsiory_Andrianasoloharison.View
         {
             InitializeComponent();
         }
+
+        private void BTN_1_Delete_Click(object sender, RoutedEventArgs e)
+        {
+       
+        }
     }
 }

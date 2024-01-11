@@ -103,7 +103,7 @@ namespace Film_Tsiory_Andrianasoloharison.View
             Button button = sender as Button;
             Favori favori = new Favori();
             Windows_Container.Children.Add(favori);
-            
+             
         }
     }
 }
