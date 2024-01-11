@@ -58,6 +58,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Services\Favoris.cs" />
     <Compile Include="Services\Film.cs" />
     <Compile Include="View\Favori.xaml.cs">
       <DependentUpon>Favori.xaml</DependentUpon>
@@ -138,6 +139,11 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Ressources\Images\bin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ressources\Fichiers\Favori.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

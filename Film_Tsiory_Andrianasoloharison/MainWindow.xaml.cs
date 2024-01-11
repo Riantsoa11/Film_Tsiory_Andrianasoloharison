@@ -83,11 +83,13 @@ namespace Film_Tsiory_Andrianasoloharison
         public int vote_count { get; set; }
     }
 
+
     public class FilmsContainer
     {
         [JsonProperty("results")]
         public List<Root> Films { get; set; }
     }
+
 
     public class GenreContainer
     {
@@ -101,6 +103,7 @@ namespace Film_Tsiory_Andrianasoloharison
         public string iso_639_1 { get; set; }
         public string name { get; set; }
     }
+
 
     public partial class MainWindow : Window
     {

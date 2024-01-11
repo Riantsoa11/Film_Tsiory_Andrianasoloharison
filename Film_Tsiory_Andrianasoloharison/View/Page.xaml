@@ -78,6 +78,7 @@
                     <StackPanel>
                         <Image Height="40" Width="60" Source="\Ressources\Images\favorites.png"/>
                         <TextBlock Text="Favori" FontSize="12" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Idname" Visibility="Hidden"></TextBlock>
                     </StackPanel>
                 </Button>
 

@@ -25,16 +25,16 @@
                 <Grid Grid.Column="0">
 
                     <Button Name="Img_favori_1"  Margin="5" Width="180">
-                        <Button.Background>
-                            <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" />
-                        </Button.Background>
-                    </Button>
+                        
+                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id1" Visibility="Hidden"></TextBlock>
+
+                </Button>
 
                 </Grid>
 
                 <Grid Grid.Column="1">
 
-                <TextBlock FontSize="20" TextAlignment="Center" Grid.ColumnSpan="2" Name="Favorititre1" FontFamily="Arial,sans-serif" FontWeight="Bold" VerticalAlignment="Center">Action de grâces</TextBlock>
+                <TextBlock FontSize="20" TextAlignment="Center" Grid.ColumnSpan="2" Name="Favorititre1" FontFamily="Arial,sans-serif" FontWeight="Bold" VerticalAlignment="Center"></TextBlock>
                 <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id_favori1" Visibility="Hidden"></TextBlock>
 
             </Grid>
@@ -92,9 +92,7 @@
             <Grid Grid.Column="0">
 
                 <Button Name="Img_favori_2"  Margin="5" Width="180">
-                    <Button.Background>
-                        <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" />
-                    </Button.Background>
+                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id2" Visibility="Hidden"></TextBlock>
                 </Button>
 
 
@@ -102,14 +100,14 @@
 
             <Grid Grid.Column="1">
 
-                <TextBlock FontSize="20" TextAlignment="Center" Grid.ColumnSpan="2" Name="Favorititre2" FontFamily="Arial,sans-serif" FontWeight="Bold" VerticalAlignment="Center">Action de grâces</TextBlock>
+                <TextBlock FontSize="20" TextAlignment="Center" Grid.ColumnSpan="2" Name="Favorititre2" FontFamily="Arial,sans-serif" FontWeight="Bold" VerticalAlignment="Center"></TextBlock>
                 <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id_favori2" Visibility="Hidden"></TextBlock>
 
             </Grid>
 
             <Grid Grid.Column="2">
 
-                <Button Background="Red" Name="BTN_2_Delete" Width="125" Height="90">
+                <Button Background="Red" Name="BTN_2_Delete" Width="125" Height="90" Click="BTN_2_Delete_Click">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="BorderBrush" Value="Black"/>
@@ -160,9 +158,7 @@
             <Grid Grid.Column="0">
 
                 <Button Name="Img_favori_3"  Margin="5" Width="180">
-                    <Button.Background>
-                        <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" />
-                    </Button.Background>
+                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id3" Visibility="Hidden"></TextBlock>
                 </Button>
 
 
@@ -170,14 +166,14 @@
 
             <Grid Grid.Column="1">
 
-                <TextBlock FontSize="20" TextAlignment="Center" Grid.ColumnSpan="2" Name="Favorititre3" FontFamily="Arial,sans-serif" FontWeight="Bold" VerticalAlignment="Center">Action de grâces</TextBlock>
+                <TextBlock FontSize="20" TextAlignment="Center" Grid.ColumnSpan="2" Name="Favorititre3" FontFamily="Arial,sans-serif" FontWeight="Bold" VerticalAlignment="Center"></TextBlock>
                 <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id_favori3" Visibility="Hidden"></TextBlock>
 
             </Grid>
 
             <Grid Grid.Column="2">
 
-                <Button Background="Red" Name="BTN_3_Delete" Width="125"  Height="90" >
+                <Button Background="Red" Name="BTN_3_Delete" Width="125"  Height="90" Click="BTN_3_Delete_Click" >
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="BorderBrush" Value="Black"/>
@@ -228,9 +224,7 @@
             <Grid Grid.Column="0">
 
                 <Button Name="Img_favori_4"  Margin="5" Width="180">
-                    <Button.Background>
-                        <ImageBrush  ImageSource="https://image.tmdb.org/t/p/w500/gq5Wi7i4SF3lo4HHkJasDV95xI9.jpg" />
-                    </Button.Background>
+                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id4" Visibility="Hidden"></TextBlock>
                 </Button>
 
 
@@ -238,14 +232,14 @@
 
             <Grid Grid.Column="1">
 
-                <TextBlock FontSize="20" TextAlignment="Center" Grid.ColumnSpan="2" Name="Favorititre4" FontFamily="Arial,sans-serif" FontWeight="Bold" VerticalAlignment="Center">Action de grâces</TextBlock>
+                <TextBlock FontSize="20" TextAlignment="Center" Grid.ColumnSpan="2" Name="Favorititre4" FontFamily="Arial,sans-serif" FontWeight="Bold" VerticalAlignment="Center"></TextBlock>
                 <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id_favori4" Visibility="Hidden"></TextBlock>
 
             </Grid>
 
             <Grid Grid.Column="2">
 
-                <Button Background="Red" Name="BTN_4_Delete" Width="125" Height="90">
+                <Button Background="Red" Name="BTN_4_Delete" Width="125" Height="90" Click="BTN_4_Delete_Click">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="BorderBrush" Value="Black"/>

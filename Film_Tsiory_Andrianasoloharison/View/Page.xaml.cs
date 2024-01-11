@@ -13,16 +13,19 @@ namespace Film_Tsiory_Andrianasoloharison.View
     /// </summary>
     public partial class Page : UserControl
     {
+        string cheminFichier = "D:/Tsiory/Projet/Film_Tsiory_Andrianasoloharison/Film_Tsiory_Andrianasoloharison/Ressources/Fichiers/Favori.txt";
+
         public string Id { get; set; }
 
         public Page()
         {
             InitializeComponent();
+            string cheminFichier = @"Ressources/Fichiers/Favori.txt";
         }
 
         // Méthode pour récupérer les détails du film
         public async void RecupererFilmDetail()
-        {
+        {            
             // Créer une instance de la classe Film
             Film film = new Film();
 
@@ -57,7 +60,7 @@ namespace Film_Tsiory_Andrianasoloharison.View
 
             // Afficher les informations du film (date de sortie, genres, durée)
             Information.Text = root.release_date.ToString() + " - " + genres + " - " + root.runtime + " min";
-
+            Idname.Text = Id;
             // Afficher un aperçu du film
             Apercu.Text = root.overview;
 
@@ -94,16 +97,64 @@ namespace Film_Tsiory_Andrianasoloharison.View
 
             // Afficher les pays de production
             Production_countries.Text = pays;
+            if (EstDansLesFavoris())
+            {
+                Favori.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                Favori.Visibility = Visibility.Visible;
+            }
         }
 
         private void Favori_Click(object sender, RoutedEventArgs e)
         {
-            Windows_Container.RowDefinitions.Clear();
-            Windows_Container.Children.Clear();
-            Button button = sender as Button;
-            Favori favori = new Favori();
-            Windows_Container.Children.Add(favori);
-             
+            // Récupérer les informations du film actuel
+            string titreFilm = Titre.Text;
+            string cheminImageFilm = Image.Source.ToString(); // Assurez-vous que cela retourne le chemin correct de l'image
+
+            // Créer une instance de la classe Film
+            Favoris favoris = new Favoris { Id = Idname.Text, Titre = titreFilm, CheminImage = cheminImageFilm };
+
+            // Ajouter le film aux favoris (vous pouvez implémenter cette logique dans votre classe de service ou ailleurs)
+            AjouterAuxFavoris(favoris);
+
+            // Vous pouvez également afficher un message pour informer l'utilisateur que le film a été ajouté aux favoris
+            MessageBox.Show("Film ajouté aux favoris !");
+        }
+
+        private void AjouterAuxFavoris(Favoris favoris)
+        {
+            try
+            {
+                // Lire le contenu actuel du fichier Favori.txt
+                string contenuFavoris = System.IO.File.ReadAllText(cheminFichier);
+
+                // Ajouter le film au contenu actuel
+                contenuFavoris += $"{favoris.Id},{favoris.Titre},{favoris.CheminImage}{Environment.NewLine}";
+
+                // Écrire le nouveau contenu dans le fichier Favori.txt
+                System.IO.File.WriteAllText(cheminFichier, contenuFavoris);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erreur lors de l'ajout aux favoris : {ex.Message}");
+            }
+        }
+
+
+        private bool EstDansLesFavoris()
+        {
+           // Lire le contenu actuel du fichier Favoris.txt
+           string contenuFavoris = System.IO.File.ReadAllText(cheminFichier);
+           string urlImage = (Image.Source as BitmapImage)?.UriSource?.AbsoluteUri;
+           if (contenuFavoris.Contains($"{Idname.Text},{Titre.Text},{urlImage}")){
+            return true;
+           }
+           else{
+            return false;
+           }
+           
         }
     }
 }
