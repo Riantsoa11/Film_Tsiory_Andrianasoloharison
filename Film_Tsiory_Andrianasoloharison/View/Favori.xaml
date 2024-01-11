@@ -161,7 +161,6 @@
                     <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id3" Visibility="Hidden"></TextBlock>
                 </Button>
 
-
             </Grid>
 
             <Grid Grid.Column="1">
@@ -206,7 +205,6 @@
                         <TextBlock Text="Supprimer" FontSize="12" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                     </StackPanel>
                 </Button>
-
 
             </Grid>
 
