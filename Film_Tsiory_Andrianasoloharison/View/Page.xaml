@@ -48,7 +48,7 @@
             <Grid Grid.Row="2" Name="Boutton">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"></ColumnDefinition>
-                    <!--<ColumnDefinition Width="*"></ColumnDefinition>-->
+                    <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <Grid Grid.Column="0">
                 <Button Background="Red" Name="Favori"  Width="125" Click="Favori_Click" >
@@ -87,7 +87,7 @@
                 </Button>
                 </Grid>
 
-                <!--<Grid Grid.Column="1">
+                <Grid Grid.Column="1">
                     <Button Background="Red" Name="Lire"  Width="125" Click="Lire_Click">
                         <Button.Style>
                             <Style TargetType="Button">
@@ -117,12 +117,12 @@
                             </Style>
                         </Button.Style>
                         <StackPanel>
-                            <Image Height="40" Width="60" Source="\Ressources\Images\Lire.png"/>
+                            <Image Height="40" Width="60" Source="\Ressources\Images\fleche.png"/>
                             <TextBlock Text="Lire" FontSize="12" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                             <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="IdTrailer" Visibility="Hidden"></TextBlock>
                         </StackPanel>
                     </Button>
-                </Grid>-->
+                </Grid>
 
 
             </Grid>
