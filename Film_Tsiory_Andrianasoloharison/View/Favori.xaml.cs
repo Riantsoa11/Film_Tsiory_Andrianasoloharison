@@ -14,6 +14,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using Film_Tsiory_Andrianasoloharison.Services;
+using System.Runtime.InteropServices;
+
 namespace Film_Tsiory_Andrianasoloharison.View
 {
     /// <summary>
@@ -21,10 +24,14 @@ namespace Film_Tsiory_Andrianasoloharison.View
     /// </summary>
     public partial class Favori : UserControl
     {
-        readonly string cheminFichier = "D:/Tsiory/Projet/Film_Tsiory_Andrianasoloharison/Film_Tsiory_Andrianasoloharison/Ressources/Fichiers/Favori.txt";
+        readonly string cheminFichier = "Ressources/Fichiers/Favori.txt";
+
+        List<Favoris> lsFavoris; 
         public Favori()
         {
             InitializeComponent();
+
+            lsFavoris = new List<Favoris>();
             ChargerFilmsDepuisFichier(cheminFichier);
         }
 
@@ -40,36 +47,69 @@ namespace Film_Tsiory_Andrianasoloharison.View
                 foreach (string ligne in lignes)
                    
                 {
-                    if (i < 5)
+
+                    // Séparer les éléments de la ligne (supposons qu'ils sont séparés par des virgules)
+                    string[] elements = ligne.Split(',');
+
+                    // Vérifier si la ligne a le bon nombre d'éléments
+                    if (elements.Length == 3)
                     {
-                        // Séparer les éléments de la ligne (supposons qu'ils sont séparés par des virgules)
-                        string[] elements = ligne.Split(',');
+                        Favoris favoris = new Favoris();
+                        favoris.Id = elements[0];
+                        favoris.Titre = elements[1];
+                        favoris.CheminImage = elements[2];
 
-                        // Vérifier si la ligne a le bon nombre d'éléments
-                        if (elements.Length == 3)
-                        {
-                            string buttonName = "Img_favori_" + i;
-                            Button image = FindName(buttonName) as Button;
-                            string textBlockName = "Favorititre" + i;
-                            TextBlock titre = FindName(textBlockName) as TextBlock;
-                            string id = "Id" + i;
-                            TextBlock idnumber = FindName(id) as TextBlock;
-                            string urlImg = "https://image.tmdb.org/t/p/w500";
-                            ImageBrush imageBrush = new ImageBrush(new BitmapImage(new Uri(urlImg + elements[2])));
-                            titre.Text = elements[1];
-                            image.Background = imageBrush;
-                            idnumber.Text = elements[0];
+                        lsFavoris.Add(favoris);
 
-                        }
                     }
-                    i++;
+
+                    lvfavori.ItemsSource = lsFavoris;
+                    
 
                 }
+                //if (i < 5)
+                //{
+                //    // Séparer les éléments de la ligne (supposons qu'ils sont séparés par des virgules)
+                //    string[] elements = ligne.Split(',');
+
+                //    // Vérifier si la ligne a le bon nombre d'éléments
+                //    if (elements.Length == 3)
+                //    {
+                //        string buttonName = "Img_favori_" + i;
+                //        Button image = FindName(buttonName) as Button;
+                //        string textBlockName = "Favorititre" + i;
+                //        TextBlock titre = FindName(textBlockName) as TextBlock;
+                //        string id = "Id" + i;
+                //        TextBlock idnumber = FindName(id) as TextBlock;
+                //        string urlImg = "https://image.tmdb.org/t/p/w500";
+                //        ImageBrush imageBrush = new ImageBrush(new BitmapImage(new Uri(urlImg + elements[2])));
+                //        titre.Text = elements[1];
+                //        image.Background = imageBrush;
+                //        idnumber.Text = elements[0];
+
+                //    }
+                //}
+                //i++;
+
+            
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Erreur lors de la lecture du fichier : {ex.Message}");
             }
+        }
+
+        
+        private void Btn_DeleteClick(object sender, RoutedEventArgs e)
+        {
+            var BTN = sender as Button;
+            var data = BTN.DataContext;
+            Favoris fav = data as Favoris;
+
+            SupprimerFilmDuFichier(fav.Id);
+           // lsFavoris.Remove(fav);
+
+            //  lvfavori.ItemsSource = lsFavoris;
         }
 
         public void SupprimerFilmDuFichier(string idFilmASupprimer)
@@ -108,32 +148,6 @@ namespace Film_Tsiory_Andrianasoloharison.View
             {
                 Console.WriteLine($"Erreur lors de la suppression du film du fichier : {ex.Message}");
             }
-        }
-
-
-
-        private void BTN_1_Delete_Click(object sender, RoutedEventArgs e)
-        {
-            SupprimerFilmDuFichier(Id1.Text);
-        }
-    
-
-        private void BTN_2_Delete_Click(object sender, RoutedEventArgs e)
-        {
-            SupprimerFilmDuFichier(Id2.Text);
-
-        }
-
-        private void BTN_3_Delete_Click(object sender, RoutedEventArgs e)
-        {
-            SupprimerFilmDuFichier(Id3.Text);
-
-        }
-
-        private void BTN_4_Delete_Click(object sender, RoutedEventArgs e)
-        {
-            SupprimerFilmDuFichier(Id4.Text);
-
-        }
+        }      
     }
 }

@@ -7,274 +7,65 @@
              mc:Ignorable="d" 
              d:DesignHeight="400" d:DesignWidth="800">
     <Grid Background="White" Name="Windows_Container">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-        </Grid.RowDefinitions>
-
-        <!--row1 -->
-        <Grid Grid.Row="0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-
-                <Grid Grid.Column="0">
-
-                    <Button Name="Img_favori_1"  Margin="5" Width="180">
-                        
-                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id1" Visibility="Hidden"></TextBlock>
-
-                </Button>
-
-                </Grid>
-
-                <Grid Grid.Column="1">
-
-                <TextBlock FontSize="20" TextAlignment="Center" Grid.ColumnSpan="2" Name="Favorititre1" FontFamily="Arial,sans-serif" FontWeight="Bold" VerticalAlignment="Center"></TextBlock>
-                <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id_favori1" Visibility="Hidden"></TextBlock>
-
-            </Grid>
-
-                <Grid Grid.Column="2">
-
-                <Button Background="Red" Name="BTN_1_Delete" Width="125"  Height="90" Click="BTN_1_Delete_Click">
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="BorderBrush" Value="Black"/>
-                            <Setter Property="BorderThickness" Value="1"/>
-                            <Setter Property="Foreground" Value="#333333"/>
-                            <Setter Property="Padding" Value="5"/>
-                            <Setter Property="Cursor" Value="Hand"/>
-                            <Setter Property="Template">
-                                <Setter.Value>
-                                    <ControlTemplate TargetType="Button">
-                                        <Grid>
-                                            <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5"/>
-                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        </Grid>
-                                    </ControlTemplate>
-                                </Setter.Value>
-                            </Setter>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#6fa8dc"/>
-                                </Trigger>
-                                <Trigger Property="IsPressed" Value="True">
-                                    <Setter Property="Background" Value="#5a7a96"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
+        <ListView Name="lvfavori">
+            <ListView.ItemTemplate>
+                <DataTemplate>
                     <StackPanel>
-                        <Image Height="40" Width="60" Source="D:\Tsiory\Projet\Film_Tsiory_Andrianasoloharison\Film_Tsiory_Andrianasoloharison\Ressources\Images\bin.png"/>
-                        <TextBlock Text="Supprimer" FontSize="12" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+
+                            <Grid x:Name="grid_Film" Grid.Column="0">
+                                <Image Source="{Binding CheminImage}" Height="250" Width="350" />
+                            </Grid>
+
+                            <Grid x:Name="grid_Titre"  Grid.Column="1">
+                                <Label FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Center" Width="800" Content="{Binding Titre}"/>
+                            </Grid>
+
+                            <Grid x:Name="grid_Btn" Grid.Column="2">
+
+                                <Button Background="Red" Name="BTN_Delete" Width="125"  Height="90" Click="Btn_DeleteClick">
+                                    <Button.Style>
+                                        <Style TargetType="Button">
+                                            <Setter Property="BorderBrush" Value="Black"/>
+                                            <Setter Property="BorderThickness" Value="1"/>
+                                            <Setter Property="Foreground" Value="#333333"/>
+                                            <Setter Property="Padding" Value="5"/>
+                                            <Setter Property="Cursor" Value="Hand"/>
+                                            <Setter Property="Template">
+                                                <Setter.Value>
+                                                    <ControlTemplate TargetType="Button">
+                                                        <Grid>
+                                                            <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5"/>
+                                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                        </Grid>
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                            <Style.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Background" Value="#6fa8dc"/>
+                                                </Trigger>
+                                                <Trigger Property="IsPressed" Value="True">
+                                                    <Setter Property="Background" Value="#5a7a96"/>
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Button.Style>
+                                    <StackPanel>
+                                        <Image Height="40" Width="60" Source="D:\Tsiory\Projet\Film_Tsiory_Andrianasoloharison\Film_Tsiory_Andrianasoloharison\Ressources\Images\bin.png"/>
+                                        <TextBlock Text="Supprimer" FontSize="12" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                    </StackPanel>
+                                </Button>
+                            </Grid>
+                        </Grid>
                     </StackPanel>
-                </Button>
-
-
-            </Grid>
-            
-        </Grid>
-
-        <!--row1 -->
-        <Grid Grid.Row="1">
-
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-
-            <Grid Grid.Column="0">
-
-                <Button Name="Img_favori_2"  Margin="5" Width="180">
-                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id2" Visibility="Hidden"></TextBlock>
-                </Button>
-
-
-            </Grid>
-
-            <Grid Grid.Column="1">
-
-                <TextBlock FontSize="20" TextAlignment="Center" Grid.ColumnSpan="2" Name="Favorititre2" FontFamily="Arial,sans-serif" FontWeight="Bold" VerticalAlignment="Center"></TextBlock>
-                <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id_favori2" Visibility="Hidden"></TextBlock>
-
-            </Grid>
-
-            <Grid Grid.Column="2">
-
-                <Button Background="Red" Name="BTN_2_Delete" Width="125" Height="90" Click="BTN_2_Delete_Click">
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="BorderBrush" Value="Black"/>
-                            <Setter Property="BorderThickness" Value="1"/>
-                            <Setter Property="Foreground" Value="#333333"/>
-                            <Setter Property="Padding" Value="5"/>
-                            <Setter Property="Cursor" Value="Hand"/>
-                            <Setter Property="Template">
-                                <Setter.Value>
-                                    <ControlTemplate TargetType="Button">
-                                        <Grid>
-                                            <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5"/>
-                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        </Grid>
-                                    </ControlTemplate>
-                                </Setter.Value>
-                            </Setter>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#6fa8dc"/>
-                                </Trigger>
-                                <Trigger Property="IsPressed" Value="True">
-                                    <Setter Property="Background" Value="#5a7a96"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
-                    <StackPanel>
-                        <Image Height="40" Width="60" Source="D:\Tsiory\Projet\Film_Tsiory_Andrianasoloharison\Film_Tsiory_Andrianasoloharison\Ressources\Images\bin.png"/>
-                        <TextBlock Text="Supprimer" FontSize="12" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                    </StackPanel>
-                </Button>
-
-
-            </Grid>
-
-        </Grid>
-
-        <!--row1 -->
-        <Grid Grid.Row="2">
-
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-
-            <Grid Grid.Column="0">
-
-                <Button Name="Img_favori_3"  Margin="5" Width="180">
-                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id3" Visibility="Hidden"></TextBlock>
-                </Button>
-
-            </Grid>
-
-            <Grid Grid.Column="1">
-
-                <TextBlock FontSize="20" TextAlignment="Center" Grid.ColumnSpan="2" Name="Favorititre3" FontFamily="Arial,sans-serif" FontWeight="Bold" VerticalAlignment="Center"></TextBlock>
-                <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id_favori3" Visibility="Hidden"></TextBlock>
-
-            </Grid>
-
-            <Grid Grid.Column="2">
-
-                <Button Background="Red" Name="BTN_3_Delete" Width="125"  Height="90" Click="BTN_3_Delete_Click" >
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="BorderBrush" Value="Black"/>
-                            <Setter Property="BorderThickness" Value="1"/>
-                            <Setter Property="Foreground" Value="#333333"/>
-                            <Setter Property="Padding" Value="5"/>
-                            <Setter Property="Cursor" Value="Hand"/>
-                            <Setter Property="Template">
-                                <Setter.Value>
-                                    <ControlTemplate TargetType="Button">
-                                        <Grid>
-                                            <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5"/>
-                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        </Grid>
-                                    </ControlTemplate>
-                                </Setter.Value>
-                            </Setter>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#6fa8dc"/>
-                                </Trigger>
-                                <Trigger Property="IsPressed" Value="True">
-                                    <Setter Property="Background" Value="#5a7a96"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
-                    <StackPanel>
-                        <Image Height="40" Width="60" Source="D:\Tsiory\Projet\Film_Tsiory_Andrianasoloharison\Film_Tsiory_Andrianasoloharison\Ressources\Images\bin.png"/>
-                        <TextBlock Text="Supprimer" FontSize="12" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                    </StackPanel>
-                </Button>
-
-            </Grid>
-
-        </Grid>
-
-        <!--row1 -->
-        <Grid Grid.Row="3">
-
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-
-            <Grid Grid.Column="0">
-
-                <Button Name="Img_favori_4"  Margin="5" Width="180">
-                    <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id4" Visibility="Hidden"></TextBlock>
-                </Button>
-
-
-            </Grid>
-
-            <Grid Grid.Column="1">
-
-                <TextBlock FontSize="20" TextAlignment="Center" Grid.ColumnSpan="2" Name="Favorititre4" FontFamily="Arial,sans-serif" FontWeight="Bold" VerticalAlignment="Center"></TextBlock>
-                <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Id_favori4" Visibility="Hidden"></TextBlock>
-
-            </Grid>
-
-            <Grid Grid.Column="2">
-
-                <Button Background="Red" Name="BTN_4_Delete" Width="125" Height="90" Click="BTN_4_Delete_Click">
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="BorderBrush" Value="Black"/>
-                            <Setter Property="BorderThickness" Value="1"/>
-                            <Setter Property="Foreground" Value="#333333"/>
-                            <Setter Property="Padding" Value="5"/>
-                            <Setter Property="Cursor" Value="Hand"/>
-                            <Setter Property="Template">
-                                <Setter.Value>
-                                    <ControlTemplate TargetType="Button">
-                                        <Grid>
-                                            <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5"/>
-                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        </Grid>
-                                    </ControlTemplate>
-                                </Setter.Value>
-                            </Setter>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#6fa8dc"/>
-                                </Trigger>
-                                <Trigger Property="IsPressed" Value="True">
-                                    <Setter Property="Background" Value="#5a7a96"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
-                    <StackPanel>
-                        <Image Height="40" Width="60" Source="D:\Tsiory\Projet\Film_Tsiory_Andrianasoloharison\Film_Tsiory_Andrianasoloharison\Ressources\Images\bin.png"/>
-                        <TextBlock Text="Supprimer" FontSize="12" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                    </StackPanel>
-                </Button>
-
-
-            </Grid>
-
-        </Grid>
-
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </UserControl>

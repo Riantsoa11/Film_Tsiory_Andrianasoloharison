@@ -13,14 +13,14 @@ namespace Film_Tsiory_Andrianasoloharison.View
     /// </summary>
     public partial class Page : UserControl
     {
-        string cheminFichier = "D:/Tsiory/Projet/Film_Tsiory_Andrianasoloharison/Film_Tsiory_Andrianasoloharison/Ressources/Fichiers/Favori.txt";
+        string cheminFichier = "Ressources/Fichiers/Favori.txt";
 
         public string Id { get; set; }
 
         public Page()
         {
             InitializeComponent();
-            string cheminFichier = @"Ressources/Fichiers/Favori.txt";
+            string cheminFichier = "Ressources/Fichiers/Favori.txt";
         }
 
         // Méthode pour récupérer les détails du film
@@ -50,13 +50,17 @@ namespace Film_Tsiory_Andrianasoloharison.View
             // Parcourir la liste des genres
             foreach (Genre genre in root.genres)
             {
+                // Ajouter le nom du genre à la chaîne "genres"
                 genres += genre.name;
 
+                // Vérifier s'il y a d'autres genres à traiter
                 if (--count > 0)
                 {
+                    // S'il y a d'autres genres, ajouter une virgule pour séparer les noms de genre
                     genres += ", ";
                 }
             }
+
 
             // Afficher les informations du film (date de sortie, genres, durée)
             Information.Text = root.release_date.ToString() + " - " + genres + " - " + root.runtime + " min";
@@ -71,12 +75,17 @@ namespace Film_Tsiory_Andrianasoloharison.View
             // Parcourir la liste des sociétés de production
             foreach (ProductionCompany production_companies in root.production_companies)
             {
+                // Ajouter le nom de la société de production à la chaîne "productions"
                 productions += production_companies.name;
+
+                // Vérifier s'il y a d'autres sociétés de production à traiter
                 if (--countProd > 0)
                 {
+                    // S'il y a d'autres sociétés de production, ajouter une virgule pour séparer les noms de société
                     productions += ", ";
                 }
             }
+
 
             // Afficher les sociétés de production
             Production_companies.Text = productions;
@@ -88,23 +97,33 @@ namespace Film_Tsiory_Andrianasoloharison.View
             // Parcourir la liste des pays de production
             foreach (ProductionCountry production_countries in root.production_countries)
             {
+                // Ajouter le nom du pays à la chaîne "pays"
                 pays += production_countries.name;
+
+                // Vérifier s'il y a d'autres pays à traiter
                 if (--countPays > 0)
                 {
+                    // S'il y a d'autres pays, ajouter une virgule pour séparer les noms de pays
                     pays += ", ";
                 }
             }
 
+
             // Afficher les pays de production
             Production_countries.Text = pays;
+
+            // Vérifier si le film est dans les favoris
             if (EstDansLesFavoris())
             {
+                // Si le film est dans les favoris, masquer le bouton "Favori"
                 Favori.Visibility = Visibility.Collapsed;
             }
             else
             {
+                // Si le film n'est pas dans les favoris, afficher le bouton "Favori"
                 Favori.Visibility = Visibility.Visible;
             }
+
         }
 
         private void Favori_Click(object sender, RoutedEventArgs e)
@@ -138,6 +157,7 @@ namespace Film_Tsiory_Andrianasoloharison.View
             }
             catch (Exception ex)
             {
+                // Gestion des exceptions : Afficher un message d'erreur en cas d'échec
                 MessageBox.Show($"Erreur lors de l'ajout aux favoris : {ex.Message}");
             }
         }
@@ -145,16 +165,24 @@ namespace Film_Tsiory_Andrianasoloharison.View
 
         private bool EstDansLesFavoris()
         {
-           // Lire le contenu actuel du fichier Favoris.txt
-           string contenuFavoris = System.IO.File.ReadAllText(cheminFichier);
-           string urlImage = (Image.Source as BitmapImage)?.UriSource?.AbsoluteUri;
-           if (contenuFavoris.Contains($"{Idname.Text},{Titre.Text},{urlImage}")){
-            return true;
-           }
-           else{
-            return false;
-           }
-           
+            // Lire le contenu actuel du fichier Favoris.txt
+            string contenuFavoris = System.IO.File.ReadAllText(cheminFichier);
+
+            // Obtenir l'URL de l'image à partir de la source de l'image actuelle
+            string urlImage = (Image.Source as BitmapImage)?.UriSource?.AbsoluteUri;
+
+            // Vérifier si le contenu du fichier Favoris.txt contient les informations actuelles
+            if (contenuFavoris.Contains($"{Idname.Text},{Titre.Text},{urlImage}"))
+            {
+                // Si les informations actuelles sont présentes dans le fichier, retourner true
+                return true;
+            }
+            else
+            {
+                // Si les informations actuelles ne sont pas présentes dans le fichier, retourner false
+                return false;
+            }
+
         }
     }
 }
