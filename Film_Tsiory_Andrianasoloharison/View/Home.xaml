@@ -7,6 +7,24 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Background="AliceBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Name="En_Tête" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Content="Dictionnaire Des Films" FontWeight="Bold" FontSize="30"/>
+            </Grid>
+            <Grid Grid.Row="1" Name="Corps">
+                <Image Height="200" Width="400"  Name="Fav"  Source="\Ressources\Images\Dico.png"/>
+            </Grid>
+            <Grid Grid.Row="2" Name="Pieds_de_page">
+                <TextBlock Name="Apercu" HorizontalAlignment="Center" VerticalAlignment="Center" Width="500" Height="100" TextWrapping="Wrap" FontFamily="Arial,sans-serif" FontSize="12">
+                    Bienvenue dans notre Dictionnaire de Films
+
+Notre Dictionnaire de Films est une ressource riche conçue pour les amateurs de cinéma en quête d'informations complètes sur leurs films préférés. Que vous soyez un cinéphile chevronné ou simplement curieux, notre dictionnaire vous offre un voyage captivant à travers le monde du cinéma.
+                </TextBlock>
+        </Grid>
             
     </Grid>
 </UserControl>
