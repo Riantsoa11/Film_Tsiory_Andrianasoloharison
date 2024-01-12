@@ -113,6 +113,33 @@ namespace Film_Tsiory_Andrianasoloharison.Services
                 }
             }
         }
- 
+
+        //public async Task<Film> RecupererDetailsFilm(int idFilm)
+        //{
+            
+        //        using (HttpClient client = new HttpClient())
+        //        {
+        //            // Appeler l'API TMDB pour récupérer les détails du film par ID
+        //            string endpoint = $"movie{idFilm}?api_key={apiKey}&language=fr-FR";
+        //            HttpResponseMessage reponse = await client.GetAsync(apiUrl + endpoint);
+
+        //            if (reponse.IsSuccessStatusCode)
+        //            {
+        //                return await reponse.Content.ReadAsStringAsync();
+                        
+
+        //                //// Extraire le titre et le lien du trailer
+        //                //string titre = detailsFilm.title;
+        //                //string lienTrailer = "https://www.youtube.com/watch?v=" + detailsFilm.videos.results[0].key;
+
+        //                //// Créer et retourner une instance de Film
+        //                //return new Film { Id = idFilm, Titre = titre, LienTrailer = lienTrailer };
+        //            }
+        //            else
+        //            {
+        //                Console.WriteLine($"Erreur de l'API TMDB : {reponse.ReasonPhrase}");
+        //            }
+        //        }
+        //}
     }
 }

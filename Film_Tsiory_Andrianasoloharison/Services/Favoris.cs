@@ -11,6 +11,9 @@ namespace Film_Tsiory_Andrianasoloharison.Services
         public string Id { get; set; }
 
         public string Titre { get; set; }
+
+        public string LienTrailer { get; set; }
+
         public string CheminImage { get; set; }  
         
     }

@@ -23,7 +23,7 @@
                             </Grid>
 
                             <Grid x:Name="grid_Titre"  Grid.Column="1">
-                                <Label FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Center" Width="800" Content="{Binding Titre}"/>
+                                <Label FontSize="18" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Width="800"  FontFamily="Arial,sans-serif" Content="{Binding Titre}"/>
                             </Grid>
 
                             <Grid x:Name="grid_Btn" Grid.Column="2">
@@ -57,7 +57,7 @@
                                         </Style>
                                     </Button.Style>
                                     <StackPanel>
-                                        <Image Height="40" Width="60" Source="D:\Tsiory\Projet\Film_Tsiory_Andrianasoloharison\Film_Tsiory_Andrianasoloharison\Ressources\Images\bin.png"/>
+                                        <Image Height="40" Width="60" Name="Film" Source="\Ressources\Images\bin.png"/>
                                         <TextBlock Text="Supprimer" FontSize="12" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                                     </StackPanel>
                                 </Button>

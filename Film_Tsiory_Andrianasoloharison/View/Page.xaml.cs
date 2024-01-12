@@ -16,6 +16,7 @@ namespace Film_Tsiory_Andrianasoloharison.View
         string cheminFichier = "Ressources/Fichiers/Favori.txt";
 
         public string Id { get; set; }
+        public string LienTrailer { get; set; }
 
         public Page()
         {
@@ -130,7 +131,7 @@ namespace Film_Tsiory_Andrianasoloharison.View
         {
             // Récupérer les informations du film actuel
             string titreFilm = Titre.Text;
-            string cheminImageFilm = Image.Source.ToString(); // Assurez-vous que cela retourne le chemin correct de l'image
+            string cheminImageFilm = Image.Source.ToString(); 
 
             // Créer une instance de la classe Film
             Favoris favoris = new Favoris { Id = Idname.Text, Titre = titreFilm, CheminImage = cheminImageFilm };
@@ -183,6 +184,24 @@ namespace Film_Tsiory_Andrianasoloharison.View
                 return false;
             }
 
+        }
+
+        private void Lire_Click(object sender, RoutedEventArgs e)
+        {
+            ////// Supposons que vous avez une instance du film actuellement affiché
+            ////Film filmActuel = // récupérer le film actuellement affiché
+
+            ////// Vérifiez si le lien du trailer est disponible
+            ////if (!string.IsNullOrEmpty(filmActuel.LienTrailer))
+            ////{
+            ////    // Ouvrir le navigateur Web par défaut avec le lien du trailer spécifique au film actuel
+            ////    System.Diagnostics.Process.Start(filmActuel.LienTrailer);
+            ////}
+            ////else
+            ////{
+            ////    // Affichez un message ou gérez le cas où le lien du trailer est manquant
+            ////    MessageBox.Show("Le lien du trailer n'est pas disponible pour ce film.");
+            //}
         }
     }
 }

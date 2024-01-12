@@ -144,6 +144,7 @@
     <Content Include="Ressources\Fichiers\Favori.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Ressources\Images\Lire.png" />
     <Resource Include="Ressources\Images\images.png" />
     <Resource Include="Ressources\Images\Photo2.jpg" />
     <Resource Include="Ressources\Images\Dico.png" />

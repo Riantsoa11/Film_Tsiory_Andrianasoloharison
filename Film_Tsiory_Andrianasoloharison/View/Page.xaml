@@ -46,7 +46,11 @@
 
             <!-- Colonne 1 Row 2-->
             <Grid Grid.Row="2" Name="Boutton">
-
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
                 <Button Background="Red" Name="Favori"  Width="125" Click="Favori_Click" >
                     <Button.Style>
                         <Style TargetType="Button">
@@ -81,6 +85,44 @@
                         <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="Idname" Visibility="Hidden"></TextBlock>
                     </StackPanel>
                 </Button>
+                </Grid>
+
+                <Grid Grid.Column="1">
+                    <Button Background="Red" Name="Lire"  Width="125" Click="Lire_Click">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="BorderBrush" Value="Black"/>
+                                <Setter Property="BorderThickness" Value="1"/>
+                                <Setter Property="Foreground" Value="#333333"/>
+                                <Setter Property="Padding" Value="5"/>
+                                <Setter Property="Cursor" Value="Hand"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="Button">
+                                            <Grid>
+                                                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5"/>
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            </Grid>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#6fa8dc"/>
+                                    </Trigger>
+                                    <Trigger Property="IsPressed" Value="True">
+                                        <Setter Property="Background" Value="#5a7a96"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <StackPanel>
+                            <Image Height="40" Width="60" Source="\Ressources\Images\Lire.png"/>
+                            <TextBlock Text="Lire" FontSize="12" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBlock FontSize="18" TextAlignment="Center" Grid.ColumnSpan="2" Name="IdTrailer" Visibility="Hidden"></TextBlock>
+                        </StackPanel>
+                    </Button>
+                </Grid>
 
 
             </Grid>
