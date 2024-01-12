@@ -33,136 +33,185 @@ namespace Film_Tsiory_Andrianasoloharison.View
         // Méthode appelée lorsqu'un bouton (BTN_img1) est cliqué
         private async void BTN_img1_Click(object sender, RoutedEventArgs e)
         {
-            // Effacer les définitions de lignes et les enfants du conteneur
+            // Effacement des définitions de lignes existantes dans Windows_Container
             Windows_Container.RowDefinitions.Clear();
+            // Effacement de tous les éléments enfants présents dans Windows_Container
             Windows_Container.Children.Clear();
-
-            // Récupérer le bouton cliqué
+            // Obtention du bouton déclencheur du clic
             Button button = sender as Button;
+            // Construction du nom du TextBlock associé au bouton
             string textBlockName = "Id" + button.Name.Substring(3);
-
-            // Trouver le TextBlock dans la hiérarchie visuelle du bouton
+            // Recherche du TextBlock correspondant dans le contexte de la fenêtre actuelle
             TextBlock textBlock = FindName(textBlockName) as TextBlock;
-
-            // Créer une nouvelle page
+            // Création d'une nouvelle instance de la classe Page
             Page page = new Page();
+            // Affectation de la valeur du TextBlock au propriétaire de la page (Id)
             page.Id = textBlock.Text;
+            // Ajout de la page en tant qu'enfant dans Windows_Container
             Windows_Container.Children.Add(page);
-            // Appeler la méthode pour récupérer les détails du film
+            // Appel de la méthode RecupererFilmDetail() pour récupérer les détails du film dans la page nouvellement ajoutée
             page.RecupererFilmDetail();
+
 
         }
 
         private void BTN_img2_Click(object sender, RoutedEventArgs e)
         {
+            // Effacement des définitions de lignes existantes dans Windows_Container
             Windows_Container.RowDefinitions.Clear();
+            // Effacement de tous les éléments enfants présents dans Windows_Container
             Windows_Container.Children.Clear();
-
+            // Obtention du bouton déclencheur du clic
             Button button = sender as Button;
+            // Construction du nom du TextBlock associé au bouton
             string textBlockName = "Id" + button.Name.Substring(3);
-
+            // Recherche du TextBlock correspondant dans le contexte de la fenêtre actuelle
             TextBlock textBlock = FindName(textBlockName) as TextBlock;
-
+            // Création d'une nouvelle instance de la classe Page
             Page page = new Page();
+            // Affectation de la valeur du TextBlock au propriétaire de la page (Id)
             page.Id = textBlock.Text;
+            // Ajout de la page en tant qu'enfant dans Windows_Container
             Windows_Container.Children.Add(page);
+            // Appel de la méthode RecupererFilmDetail() pour récupérer les détails du film dans la page nouvellement ajoutée
             page.RecupererFilmDetail();
         }
 
         private void BTN_img3_Click(object sender, RoutedEventArgs e)
         {
+            // Effacement des définitions de lignes existantes dans Windows_Container
             Windows_Container.RowDefinitions.Clear();
+            // Effacement de tous les éléments enfants présents dans Windows_Container
             Windows_Container.Children.Clear();
-
+            // Obtention du bouton déclencheur du clic
             Button button = sender as Button;
+            // Construction du nom du TextBlock associé au bouton
             string textBlockName = "Id" + button.Name.Substring(3);
-
+            // Recherche du TextBlock correspondant dans le contexte de la fenêtre actuelle
             TextBlock textBlock = FindName(textBlockName) as TextBlock;
-
+            // Création d'une nouvelle instance de la classe Page
             Page page = new Page();
+            // Affectation de la valeur du TextBlock au propriétaire de la page (Id)
             page.Id = textBlock.Text;
+            // Ajout de la page en tant qu'enfant dans Windows_Container
             Windows_Container.Children.Add(page);
+            // Appel de la méthode RecupererFilmDetail() pour récupérer les détails du film dans la page nouvellement ajoutée
             page.RecupererFilmDetail();
         }
 
         private void BTN_img4_Click(object sender, RoutedEventArgs e)
         {
+            // Effacement des définitions de lignes existantes dans Windows_Container
             Windows_Container.RowDefinitions.Clear();
+            // Effacement de tous les éléments enfants présents dans Windows_Container
             Windows_Container.Children.Clear();
-
+            // Obtention du bouton déclencheur du clic
             Button button = sender as Button;
+            // Construction du nom du TextBlock associé au bouton
             string textBlockName = "Id" + button.Name.Substring(3);
-
+            // Recherche du TextBlock correspondant dans le contexte de la fenêtre actuelle
             TextBlock textBlock = FindName(textBlockName) as TextBlock;
-
+            // Création d'une nouvelle instance de la classe Page
             Page page = new Page();
+            // Affectation de la valeur du TextBlock au propriétaire de la page (Id)
             page.Id = textBlock.Text;
+            // Ajout de la page en tant qu'enfant dans Windows_Container
             Windows_Container.Children.Add(page);
+            // Appel de la méthode RecupererFilmDetail() pour récupérer les détails du film dans la page nouvellement ajoutée
             page.RecupererFilmDetail();
+
         }
 
         private void BTN_img5_Click(object sender, RoutedEventArgs e)
         {
+            // Effacement des définitions de lignes existantes dans Windows_Container
             Windows_Container.RowDefinitions.Clear();
+            // Effacement de tous les éléments enfants présents dans Windows_Container
             Windows_Container.Children.Clear();
-
+            // Obtention du bouton déclencheur du clic
             Button button = sender as Button;
+            // Construction du nom du TextBlock associé au bouton
             string textBlockName = "Id" + button.Name.Substring(3);
-
+            // Recherche du TextBlock correspondant dans le contexte de la fenêtre actuelle
             TextBlock textBlock = FindName(textBlockName) as TextBlock;
-
+            // Création d'une nouvelle instance de la classe Page
             Page page = new Page();
+            // Affectation de la valeur du TextBlock au propriétaire de la page (Id)
             page.Id = textBlock.Text;
+            // Ajout de la page en tant qu'enfant dans Windows_Container
             Windows_Container.Children.Add(page);
+            // Appel de la méthode RecupererFilmDetail() pour récupérer les détails du film dans la page nouvellement ajoutée
             page.RecupererFilmDetail();
+
         }
 
         private void BTN_img6_Click(object sender, RoutedEventArgs e)
         {
+            // Effacement des définitions de lignes existantes dans Windows_Container
             Windows_Container.RowDefinitions.Clear();
+            // Effacement de tous les éléments enfants présents dans Windows_Container
             Windows_Container.Children.Clear();
-
+            // Obtention du bouton déclencheur du clic
             Button button = sender as Button;
+            // Construction du nom du TextBlock associé au bouton
             string textBlockName = "Id" + button.Name.Substring(3);
-
+            // Recherche du TextBlock correspondant dans le contexte de la fenêtre actuelle
             TextBlock textBlock = FindName(textBlockName) as TextBlock;
-
+            // Création d'une nouvelle instance de la classe Page
             Page page = new Page();
+            // Affectation de la valeur du TextBlock au propriétaire de la page (Id)
             page.Id = textBlock.Text;
+            // Ajout de la page en tant qu'enfant dans Windows_Container
             Windows_Container.Children.Add(page);
+            // Appel de la méthode RecupererFilmDetail() pour récupérer les détails du film dans la page nouvellement ajoutée
             page.RecupererFilmDetail();
+
         }
 
         private void BTN_img7_Click(object sender, RoutedEventArgs e)
         {
+            // Effacement des définitions de lignes existantes dans Windows_Container
             Windows_Container.RowDefinitions.Clear();
+            // Effacement de tous les éléments enfants présents dans Windows_Container
             Windows_Container.Children.Clear();
-
+            // Obtention du bouton déclencheur du clic
             Button button = sender as Button;
+            // Construction du nom du TextBlock associé au bouton
             string textBlockName = "Id" + button.Name.Substring(3);
-
+            // Recherche du TextBlock correspondant dans le contexte de la fenêtre actuelle
             TextBlock textBlock = FindName(textBlockName) as TextBlock;
-
+            // Création d'une nouvelle instance de la classe Page
             Page page = new Page();
+            // Affectation de la valeur du TextBlock au propriétaire de la page (Id)
             page.Id = textBlock.Text;
+            // Ajout de la page en tant qu'enfant dans Windows_Container
             Windows_Container.Children.Add(page);
+            // Appel de la méthode RecupererFilmDetail() pour récupérer les détails du film dans la page nouvellement ajoutée
             page.RecupererFilmDetail();
+
         }
 
         private void BTN_img8_Click(object sender, RoutedEventArgs e)
         {
+            // Effacement des définitions de lignes existantes dans Windows_Container
             Windows_Container.RowDefinitions.Clear();
+            // Effacement de tous les éléments enfants présents dans Windows_Container
             Windows_Container.Children.Clear();
-
+            // Obtention du bouton déclencheur du clic
             Button button = sender as Button;
+            // Construction du nom du TextBlock associé au bouton
             string textBlockName = "Id" + button.Name.Substring(3);
-
+            // Recherche du TextBlock correspondant dans le contexte de la fenêtre actuelle
             TextBlock textBlock = FindName(textBlockName) as TextBlock;
-
+            // Création d'une nouvelle instance de la classe Page
             Page page = new Page();
+            // Affectation de la valeur du TextBlock au propriétaire de la page (Id)
             page.Id = textBlock.Text;
+            // Ajout de la page en tant qu'enfant dans Windows_Container
             Windows_Container.Children.Add(page);
+            // Appel de la méthode RecupererFilmDetail() pour récupérer les détails du film dans la page nouvellement ajoutée
             page.RecupererFilmDetail();
+
         }
 
         // Méthode pour récupérer la liste des films
@@ -215,9 +264,13 @@ namespace Film_Tsiory_Andrianasoloharison.View
 
         public async void RecupererFilmAvecGenre(string genreName)
         {
+            // Création d'une instance de la classe Film
             Film film = new Film();
+            // Appel de la méthode RecuperGenre() pour récupérer les genres depuis une source (probablement une API)
             string genre = await film.RecuperGenre();
+            // Désérialisation de la réponse JSON (probablement contenant une liste de genres) en utilisant la classe GenreContainer
             var genres = JsonConvert.DeserializeObject<GenreContainer>(genre);
+            // Recherche du genre spécifié dans la liste des genres
             var selectedGenre = genres.Genres.Find(g => g.name.Equals(genreName, StringComparison.OrdinalIgnoreCase));
             // URL de base pour les images des films
             string urlImg = "https://image.tmdb.org/t/p/w500";

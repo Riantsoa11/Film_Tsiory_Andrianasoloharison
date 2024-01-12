@@ -186,22 +186,22 @@ namespace Film_Tsiory_Andrianasoloharison.View
 
         }
 
-        private void Lire_Click(object sender, RoutedEventArgs e)
-        {
-            ////// Supposons que vous avez une instance du film actuellement affiché
-            ////Film filmActuel = // récupérer le film actuellement affiché
+        //private void Lire_Click(object sender, RoutedEventArgs e)
+        //{
+        //    ////// Supposons que vous avez une instance du film actuellement affiché
+        //    ////Film filmActuel = // récupérer le film actuellement affiché
 
-            ////// Vérifiez si le lien du trailer est disponible
-            ////if (!string.IsNullOrEmpty(filmActuel.LienTrailer))
-            ////{
-            ////    // Ouvrir le navigateur Web par défaut avec le lien du trailer spécifique au film actuel
-            ////    System.Diagnostics.Process.Start(filmActuel.LienTrailer);
-            ////}
-            ////else
-            ////{
-            ////    // Affichez un message ou gérez le cas où le lien du trailer est manquant
-            ////    MessageBox.Show("Le lien du trailer n'est pas disponible pour ce film.");
-            //}
-        }
+        //    ////// Vérifiez si le lien du trailer est disponible
+        //    ////if (!string.IsNullOrEmpty(filmActuel.LienTrailer))
+        //    ////{
+        //    ////    // Ouvrir le navigateur Web par défaut avec le lien du trailer spécifique au film actuel
+        //    ////    System.Diagnostics.Process.Start(filmActuel.LienTrailer);
+        //    ////}
+        //    ////else
+        //    ////{
+        //    ////    // Affichez un message ou gérez le cas où le lien du trailer est manquant
+        //    ////    MessageBox.Show("Le lien du trailer n'est pas disponible pour ce film.");
+        //    //}
+        //}
     }
 }

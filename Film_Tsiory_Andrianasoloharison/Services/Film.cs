@@ -17,6 +17,7 @@ namespace Film_Tsiory_Andrianasoloharison.Services
         // Méthode pour récupérer la liste des films populaires
         public async Task<string> RecupererFilm()
         {
+            // Utilisation du bloc using pour assurer la libération des ressources après utilisation
             using (HttpClient client = new HttpClient())
             {
                 // Construction de l'URL d'endpoint pour les films populaires
@@ -41,6 +42,7 @@ namespace Film_Tsiory_Andrianasoloharison.Services
 
         public async Task<string> RecupererFilmAvecGenre(string genreId)
         {
+            // Utilisation du bloc using pour assurer la libération des ressources après utilisation
             using (HttpClient client = new HttpClient())
             {
                 // Construction de l'URL d'endpoint pour les films populaires
@@ -65,6 +67,7 @@ namespace Film_Tsiory_Andrianasoloharison.Services
 
         public async Task<string> RecuperGenre()
         {
+            // Utilisation du bloc using pour assurer la libération des ressources après utilisation
             using (HttpClient client = new HttpClient())
             {
                 // Construction de l'URL d'endpoint pour les films populaires
@@ -116,30 +119,30 @@ namespace Film_Tsiory_Andrianasoloharison.Services
 
         //public async Task<Film> RecupererDetailsFilm(int idFilm)
         //{
-            
-        //        using (HttpClient client = new HttpClient())
+
+        //    using (HttpClient client = new HttpClient())
+        //    {
+        //        // Appeler l'API TMDB pour récupérer les détails du film par ID
+        //        string endpoint = $"movie{idFilm}?api_key={apiKey}&language=fr-FR";
+        //        HttpResponseMessage reponse = await client.GetAsync(apiUrl + endpoint);
+
+        //        if (reponse.IsSuccessStatusCode)
         //        {
-        //            // Appeler l'API TMDB pour récupérer les détails du film par ID
-        //            string endpoint = $"movie{idFilm}?api_key={apiKey}&language=fr-FR";
-        //            HttpResponseMessage reponse = await client.GetAsync(apiUrl + endpoint);
+        //            return await reponse.Content.ReadAsStringAsync();
 
-        //            if (reponse.IsSuccessStatusCode)
-        //            {
-        //                return await reponse.Content.ReadAsStringAsync();
-                        
 
-        //                //// Extraire le titre et le lien du trailer
-        //                //string titre = detailsFilm.title;
-        //                //string lienTrailer = "https://www.youtube.com/watch?v=" + detailsFilm.videos.results[0].key;
+        //            //// Extraire le titre et le lien du trailer
+        //            //string titre = detailsFilm.title;
+        //            //string lienTrailer = "https://www.youtube.com/watch?v=" + detailsFilm.videos.results[0].key;
 
-        //                //// Créer et retourner une instance de Film
-        //                //return new Film { Id = idFilm, Titre = titre, LienTrailer = lienTrailer };
-        //            }
-        //            else
-        //            {
-        //                Console.WriteLine($"Erreur de l'API TMDB : {reponse.ReasonPhrase}");
-        //            }
+        //            //// Créer et retourner une instance de Film
+        //            //return new Film { Id = idFilm, Titre = titre, LienTrailer = lienTrailer };
         //        }
+        //        else
+        //        {
+        //            Console.WriteLine($"Erreur de l'API TMDB : {reponse.ReasonPhrase}");
+        //        }
+        //    }
         //}
     }
 }

@@ -29,10 +29,13 @@ namespace Film_Tsiory_Andrianasoloharison.View
         List<Favoris> lsFavoris; 
         public Favori()
         {
+            // Appel de la méthode générée automatiquement qui initialise les composants de l'interface utilisateur XAML
             InitializeComponent();
-
+            // Initialisation de la liste lsFavoris en tant que nouvelle instance de List<Favoris>
             lsFavoris = new List<Favoris>();
+            // Appel de la méthode ChargerFilmsDepuisFichier pour charger les films depuis un fichier spécifié
             ChargerFilmsDepuisFichier(cheminFichier);
+
         }
 
         public void ChargerFilmsDepuisFichier(string cheminFichier)
@@ -51,20 +54,22 @@ namespace Film_Tsiory_Andrianasoloharison.View
                     // Séparer les éléments de la ligne (supposons qu'ils sont séparés par des virgules)
                     string[] elements = ligne.Split(',');
 
-                    // Vérifier si la ligne a le bon nombre d'éléments
+                    // Vérification si le tableau "elements" contient exactement 3 éléments
                     if (elements.Length == 3)
                     {
+                        // Création d'une nouvelle instance de la classe Favoris
                         Favoris favoris = new Favoris();
+                        // Attribution des valeurs aux propriétés de l'objet favoris à partir du tableau elements
                         favoris.Id = elements[0];
                         favoris.Titre = elements[1];
                         favoris.CheminImage = elements[2];
 
+                        // Ajout de l'objet favoris à la liste lsFavoris
                         lsFavoris.Add(favoris);
-
                     }
-
+                    // Attribution de la liste lsFavoris comme source de données à lvfavori (ListView)
                     lvfavori.ItemsSource = lsFavoris;
-                    
+
 
                 }
                 //if (i < 5)
@@ -107,9 +112,7 @@ namespace Film_Tsiory_Andrianasoloharison.View
             Favoris fav = data as Favoris;
 
             SupprimerFilmDuFichier(fav.Id);
-           // lsFavoris.Remove(fav);
-
-            //  lvfavori.ItemsSource = lsFavoris;
+           
         }
 
         public void SupprimerFilmDuFichier(string idFilmASupprimer)
